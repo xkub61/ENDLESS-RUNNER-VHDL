@@ -1,0 +1,32 @@
+|Contador_7_bits
+cnt_RESET => cnt[0].ACLR
+cnt_RESET => cnt[1].ACLR
+cnt_RESET => cnt[2].ACLR
+cnt_RESET => cnt[3].ACLR
+cnt_RESET => cnt[4].ACLR
+cnt_RESET => cnt[5].ACLR
+cnt_RESET => cnt[6].ACLR
+cnt_H => cnt[0].ENA
+cnt_H => cnt[1].ENA
+cnt_H => cnt[2].ENA
+cnt_H => cnt[3].ENA
+cnt_H => cnt[4].ENA
+cnt_H => cnt[5].ENA
+cnt_H => cnt[6].ENA
+cnt_CLK => cnt[0].CLK
+cnt_CLK => cnt[1].CLK
+cnt_CLK => cnt[2].CLK
+cnt_CLK => cnt[3].CLK
+cnt_CLK => cnt[4].CLK
+cnt_CLK => cnt[5].CLK
+cnt_CLK => cnt[6].CLK
+cnt_Q[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+cnt_Q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+cnt_Q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+cnt_Q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+cnt_Q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+cnt_Q[5] <= cnt[5].DB_MAX_OUTPUT_PORT_TYPE
+cnt_Q[6] <= cnt[6].DB_MAX_OUTPUT_PORT_TYPE
+cnt_MAX <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
