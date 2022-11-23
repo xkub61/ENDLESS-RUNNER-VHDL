@@ -6,6 +6,7 @@ entity Contador_7_bits is
 	port(
 			cnt_RESET : in std_logic;
 			cnt_H : in std_logic;
+			cnt_C : in std_logic;
 			cnt_CLK : in std_logic;
 			cnt_Q : out std_logic_vector(6 downto 0);
 			cnt_MAX : out std_logic
@@ -20,7 +21,7 @@ architecture arch of Contador_7_bits is
 		begin
 			if (cnt_RESET = '1') then
 				cnt := to_unsigned(0,7);
-			elsif (rising_edge(cnt_CLK) and cnt_H = '1') then
+			elsif (rising_edge(cnt_CLK) and cnt_H = '1' and cnt_C = '1') then
 				cnt := cnt + to_unsigned(1,7);
 			end if;
 			

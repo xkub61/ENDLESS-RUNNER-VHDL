@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\2022-2\Laboratorio SD\Trabalho final\Contador_7_bits\simulation\modelsim
+Econtador_7_bits
+Z1 w1669168268
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dD:\2022-2\Laboratorio SD\Trabalho final\Contador_7_bits\simulation\modelsim
+Z6 8D:/2022-2/Laboratorio SD/Trabalho final/Contador_7_bits/Contador_7_bits.vhd
+Z7 FD:/2022-2/Laboratorio SD/Trabalho final/Contador_7_bits/Contador_7_bits.vhd
+l0
+L5
+V:ze8Pz72=agY46alDPmNF3
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1669169276.336000
+Z10 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/Contador_7_bits/Contador_7_bits.vhd|
+Z11 !s107 D:/2022-2/Laboratorio SD/Trabalho final/Contador_7_bits/Contador_7_bits.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 A;Q:LbJFa9EzG^:`V;:FY0
+!i10b 1
+Aarch
+R2
+R3
+R4
+DEx4 work 15 contador_7_bits 0 22 :ze8Pz72=agY46alDPmNF3
+l17
+L16
+VIT==d:hG>LeYgY6PbiUfM2
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 oYi^bATDN8jdWJ:1k>iYn0
+!i10b 1
+Etb_contador_7_bits
+Z14 w1669169242
+R2
+R3
+R4
+R5
+Z15 8D:/2022-2/Laboratorio SD/Trabalho final/Contador_7_bits/tb_Contador_7_bits.vhd
+Z16 FD:/2022-2/Laboratorio SD/Trabalho final/Contador_7_bits/tb_Contador_7_bits.vhd
+l0
+L5
+V3QKb4`<XCbSg_B8WHaYXW1
+!s100 c15O]M5bR:602HV=b9oD?1
+R8
+31
+!i10b 1
+Z17 !s108 1669169276.723000
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/Contador_7_bits/tb_Contador_7_bits.vhd|
+Z19 !s107 D:/2022-2/Laboratorio SD/Trabalho final/Contador_7_bits/tb_Contador_7_bits.vhd|
+R12
+R13
+Aarch
+R2
+R3
+R4
+DEx4 work 18 tb_contador_7_bits 0 22 3QKb4`<XCbSg_B8WHaYXW1
+l22
+L8
+VE5amUfCKfR0T6Q1cG<jBb2
+!s100 1Cc6a<:H]b>h3Jd4;`QgP2
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13
