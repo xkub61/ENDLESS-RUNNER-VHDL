@@ -1,0 +1,81 @@
+# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do gerar_obst_aleatorio_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/reg18bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg18bits
+# -- Compiling architecture arch of reg18bits
+# vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/Contador_2_bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Contador_2_bits
+# -- Compiling architecture arch of Contador_2_bits
+# vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/sr18bits_dual.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sr18bits_dual
+# -- Compiling architecture arch of sr18bits_dual
+# vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/lfsr.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity lfsr
+# -- Compiling architecture arch of lfsr
+# vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/gerar_obst_aleatorio.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity gerar_obst_aleatorio
+# -- Compiling architecture arch of gerar_obst_aleatorio
+# 
+# vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/tb_gerar_obst_aleatorio.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_gerar_obst_aleatorio
+# -- Compiling architecture teste of tb_gerar_obst_aleatorio
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_gerar_obst_aleatorio
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_gerar_obst_aleatorio 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_gerar_obst_aleatorio(teste)
+# Loading work.gerar_obst_aleatorio(arch)
+# Loading work.contador_2_bits(arch)
+# Loading work.sr18bits_dual(arch)
+# Loading work.reg18bits(arch)
+# Loading work.lfsr(arch)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 20 ns

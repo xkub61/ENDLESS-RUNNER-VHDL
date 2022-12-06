@@ -1,0 +1,13 @@
+|reg2bits
+reg_D[0] => reg_Q[0]~reg0.DATAIN
+reg_D[1] => reg_Q[1]~reg0.DATAIN
+reg_E => reg_Q[0]~reg0.ENA
+reg_E => reg_Q[1]~reg0.ENA
+reg_CLK => reg_Q[0]~reg0.CLK
+reg_CLK => reg_Q[1]~reg0.CLK
+reg_CLEAR => reg_Q[0]~reg0.ACLR
+reg_CLEAR => reg_Q[1]~reg0.ACLR
+reg_Q[0] <= reg_Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+reg_Q[1] <= reg_Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

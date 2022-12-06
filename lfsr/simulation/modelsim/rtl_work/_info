@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\2022-2\Laboratorio SD\Trabalho final\lfsr\simulation\modelsim
+Elfsr
+Z1 w1669698426
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dD:\2022-2\Laboratorio SD\Trabalho final\lfsr\simulation\modelsim
+Z6 8D:/2022-2/Laboratorio SD/Trabalho final/lfsr/lfsr.vhd
+Z7 FD:/2022-2/Laboratorio SD/Trabalho final/lfsr/lfsr.vhd
+l0
+L5
+V=T7U4I9CoCMNFk=YzfNCY3
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1669698851.553000
+Z10 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/lfsr/lfsr.vhd|
+Z11 !s107 D:/2022-2/Laboratorio SD/Trabalho final/lfsr/lfsr.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 `X]AzhV6CR9c=i4NefYlX1
+!i10b 1
+Aarch
+R2
+R3
+R4
+DEx4 work 4 lfsr 0 22 =T7U4I9CoCMNFk=YzfNCY3
+l15
+L12
+Vl6RG7M?]KE1znMV_Va7KH2
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 :3]enjOV^`Wk1<^bSGAW>0
+!i10b 1
+Etb_lfsr
+Z14 w1669697060
+R2
+R3
+R4
+R5
+Z15 8D:/2022-2/Laboratorio SD/Trabalho final/lfsr/tb_lfsr.vhd
+Z16 FD:/2022-2/Laboratorio SD/Trabalho final/lfsr/tb_lfsr.vhd
+l0
+L5
+VTFBW<N39_?[52zF[n23UV2
+!s100 @1Ge8OLFF4>I@_5fQ6ie50
+R8
+31
+!i10b 1
+Z17 !s108 1669698852.057000
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/lfsr/tb_lfsr.vhd|
+Z19 !s107 D:/2022-2/Laboratorio SD/Trabalho final/lfsr/tb_lfsr.vhd|
+R12
+R13
+Atb
+R2
+R3
+R4
+DEx4 work 7 tb_lfsr 0 22 TFBW<N39_?[52zF[n23UV2
+l19
+L8
+Vc:idPM]YXb?Kb@Ff:ln?R0
+!s100 NSE6=4K:IJ@VTI5ITK[XZ3
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13

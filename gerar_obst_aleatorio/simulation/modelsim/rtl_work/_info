@@ -1,0 +1,227 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\2022-2\Laboratorio SD\Trabalho final\gerar_obst_aleatorio\simulation\modelsim
+Econtador_2_bits
+Z1 w1669989588
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dD:\2022-2\Laboratorio SD\Trabalho final\gerar_obst_aleatorio\simulation\modelsim
+Z6 8D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/Contador_2_bits.vhd
+Z7 FD:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/Contador_2_bits.vhd
+l0
+L5
+V69ofae1Voz^JzhZJ0=o:S0
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1669989926.820000
+Z10 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/Contador_2_bits.vhd|
+Z11 !s107 D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/Contador_2_bits.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 5chS;XKzeFYXY8FkN5SF=2
+!i10b 1
+Aarch
+R2
+R3
+R4
+DEx4 work 15 contador_2_bits 0 22 69ofae1Voz^JzhZJ0=o:S0
+l15
+L14
+VBb_P]dg=9TZ4JRg1O43QK3
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 faBzXgzhO?[CV[GU3Xe;L2
+!i10b 1
+Egerar_obst_aleatorio
+Z14 w1669989562
+R2
+R3
+R4
+R5
+Z15 8D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/gerar_obst_aleatorio.vhd
+Z16 FD:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/gerar_obst_aleatorio.vhd
+l0
+L5
+ViDXSdfnDNYz9i;Jb`88gD2
+R8
+31
+Z17 !s108 1669989928.756000
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/gerar_obst_aleatorio.vhd|
+Z19 !s107 D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/gerar_obst_aleatorio.vhd|
+R12
+R13
+!s100 e6<GS95z=`8QKN`bR;2QJ1
+!i10b 1
+Aarch
+R2
+R3
+R4
+DEx4 work 20 gerar_obst_aleatorio 0 22 iDXSdfnDNYz9i;Jb`88gD2
+l44
+L13
+VZ8<ZBXP>E:V2JL[]zF?Wl3
+R8
+31
+R17
+R18
+R19
+R12
+R13
+!s100 lanAzjD_W9EhmU0Vm5@o33
+!i10b 1
+Elfsr
+Z20 w1669698426
+R2
+R3
+R4
+R5
+Z21 8D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/lfsr.vhd
+Z22 FD:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/lfsr.vhd
+l0
+L5
+V=T7U4I9CoCMNFk=YzfNCY3
+R8
+31
+Z23 !s108 1669989928.132000
+Z24 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/lfsr.vhd|
+Z25 !s107 D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/lfsr.vhd|
+R12
+R13
+!s100 `X]AzhV6CR9c=i4NefYlX1
+!i10b 1
+Aarch
+R2
+R3
+R4
+DEx4 work 4 lfsr 0 22 =T7U4I9CoCMNFk=YzfNCY3
+l15
+L12
+Vl6RG7M?]KE1znMV_Va7KH2
+R8
+31
+R23
+R24
+R25
+R12
+R13
+!s100 :3]enjOV^`Wk1<^bSGAW>0
+!i10b 1
+Ereg18bits
+Z26 w1669859804
+R2
+R3
+R4
+R5
+Z27 8D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/reg18bits.vhd
+Z28 FD:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/reg18bits.vhd
+l0
+L5
+V:3fbJNz8_JJCOHR[MB91Z3
+R8
+31
+Z29 !s108 1669989925.804000
+Z30 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/reg18bits.vhd|
+Z31 !s107 D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/reg18bits.vhd|
+R12
+R13
+!s100 [[N1zC@RUGQhidn=U:6J=1
+!i10b 1
+Aarch
+R2
+R3
+R4
+DEx4 work 9 reg18bits 0 22 :3fbJNz8_JJCOHR[MB91Z3
+l15
+L14
+VY1JUHaH=R2LI`CZ_<hZ?L3
+R8
+31
+R29
+R30
+R31
+R12
+R13
+!s100 3VGX9BND;ZH2IFBVz:6OS1
+!i10b 1
+Esr18bits_dual
+Z32 w1669986136
+R2
+R3
+R4
+R5
+Z33 8D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/sr18bits_dual.vhd
+Z34 FD:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/sr18bits_dual.vhd
+l0
+L5
+V_ES;CI11ll;F0XU`XFo1a3
+R8
+31
+Z35 !s108 1669989927.485000
+Z36 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/sr18bits_dual.vhd|
+Z37 !s107 D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/sr18bits_dual.vhd|
+R12
+R13
+!s100 W7[l5UfkTO5b:9PI2g9]@2
+!i10b 1
+Aarch
+R2
+R3
+R4
+DEx4 work 13 sr18bits_dual 0 22 _ES;CI11ll;F0XU`XFo1a3
+l28
+L15
+V`SmCm0AL9H7Xok;E>Y;o83
+R8
+31
+R35
+R36
+R37
+R12
+R13
+!s100 TAPQiF7LMc4RJMFHJWAiD0
+!i10b 1
+Etb_gerar_obst_aleatorio
+Z38 w1669988922
+R2
+R3
+R4
+R5
+Z39 8D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/tb_gerar_obst_aleatorio.vhd
+Z40 FD:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/tb_gerar_obst_aleatorio.vhd
+l0
+L5
+V<<4Xdo1gm=[d<EQGbEAPO1
+!s100 j4>V:YnFh4Y:T4?8a9g030
+R8
+31
+!i10b 1
+Z41 !s108 1669989929.428000
+Z42 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/tb_gerar_obst_aleatorio.vhd|
+Z43 !s107 D:/2022-2/Laboratorio SD/Trabalho final/gerar_obst_aleatorio/tb_gerar_obst_aleatorio.vhd|
+R12
+R13
+Ateste
+R2
+R3
+R4
+DEx4 work 23 tb_gerar_obst_aleatorio 0 22 <<4Xdo1gm=[d<EQGbEAPO1
+l26
+L8
+VC6:033BNeU486OC?Tje:<0
+!s100 gVbh9<Xo^L>onVjVa?8EK1
+R8
+31
+!i10b 1
+R41
+R42
+R43
+R12
+R13

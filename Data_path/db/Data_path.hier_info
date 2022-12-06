@@ -1,0 +1,22 @@
+|Data_path
+dt_CLEAR => ~NO_FANOUT~
+dt_CLOCK => ~NO_FANOUT~
+dt_C1 => ~NO_FANOUT~
+dt_C2 => ~NO_FANOUT~
+dt_A => ~NO_FANOUT~
+dt_B => ~NO_FANOUT~
+dt_PLAYER_NUM[0] => ~NO_FANOUT~
+dt_PLAYER_NUM[1] => ~NO_FANOUT~
+dt_PLAYER_ENABLE => ~NO_FANOUT~
+dt_cmp_Q <= dt_cmp_Q.DB_MAX_OUTPUT_PORT_TYPE
+dt_cnt_Q[0] <= dt_cnt_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+dt_cnt_Q[1] <= dt_cnt_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+dt_cnt_Q[2] <= dt_cnt_Q[2].DB_MAX_OUTPUT_PORT_TYPE
+dt_cnt_Q[3] <= dt_cnt_Q[3].DB_MAX_OUTPUT_PORT_TYPE
+dt_cnt_Q[4] <= dt_cnt_Q[4].DB_MAX_OUTPUT_PORT_TYPE
+dt_cnt_Q[5] <= dt_cnt_Q[5].DB_MAX_OUTPUT_PORT_TYPE
+dt_cnt_Q[6] <= dt_cnt_Q[6].DB_MAX_OUTPUT_PORT_TYPE
+dt_reg_Q[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+dt_reg_Q[1] <= dt_reg_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+
+

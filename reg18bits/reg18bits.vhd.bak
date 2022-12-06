@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity reg18bits is 
+	port(
+			reg18_D : in std_logic_vector(17 downto 0);
+			reg18_E : in std_logic;
+			reg18_CLK : in std_logic;
+			reg18_CLEAR : in std_logic;
+			reg18_Q : out std_logic_vector(17 downto 0)
+		);
+end reg18bits;
+
+architecture arch of reg18bits is
+
+begin
+	process(reg18_CLEAR,reg18_CLK) is
+		begin
+		
+		if reg18_CLEAR = '1' then
+			reg18_Q <= "00";
+		else
+			if (rising_edge(reg18_CLK) and reg18_E = '1') then
+				reg18_Q <= reg18_D;
+			end if;
+		end if;
+		end process;
+		
+end arch;

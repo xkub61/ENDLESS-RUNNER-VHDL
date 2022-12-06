@@ -1,0 +1,19 @@
+|lfsr
+lfsr_clk => intern[0].CLK
+lfsr_clk => intern[1].CLK
+lfsr_clk => intern[2].CLK
+lfsr_clk => intern[3].CLK
+lfsr_clk => intern[4].CLK
+lfsr_clk => intern[5].CLK
+lfsr_clk => intern[6].CLK
+lfsr_clk => intern[7].CLK
+lfsr_s[0] <= intern[0].DB_MAX_OUTPUT_PORT_TYPE
+lfsr_s[1] <= intern[1].DB_MAX_OUTPUT_PORT_TYPE
+lfsr_s[2] <= intern[2].DB_MAX_OUTPUT_PORT_TYPE
+lfsr_s[3] <= intern[3].DB_MAX_OUTPUT_PORT_TYPE
+lfsr_s[4] <= intern[4].DB_MAX_OUTPUT_PORT_TYPE
+lfsr_s[5] <= intern[5].DB_MAX_OUTPUT_PORT_TYPE
+lfsr_s[6] <= intern[6].DB_MAX_OUTPUT_PORT_TYPE
+lfsr_s[7] <= intern[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

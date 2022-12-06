@@ -1,0 +1,5 @@
+set tool_name "ModelSim-Altera (VHDL)"
+set corner_file_list {
+	{{"Slow Model"} {gerar_obst_aleatorio.vho gerar_obst_aleatorio_vhd.sdo}}
+	{{"Fast Model"} {gerar_obst_aleatorio_fast.vho gerar_obst_aleatorio_vhd_fast.sdo}}
+}

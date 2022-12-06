@@ -1,0 +1,9 @@
+|Contador_2_bits
+cnt_CLK => cnt[0].CLK
+cnt_CLK => cnt[1].CLK
+cnt_RESET => cnt[0].ACLR
+cnt_RESET => cnt[1].ACLR
+cnt_Q[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+cnt_Q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
