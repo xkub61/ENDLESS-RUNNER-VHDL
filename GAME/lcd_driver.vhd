@@ -22,63 +22,62 @@ architecture arch of lcd_driver is
 	
 	component lcd_driver_dp is
 		port(
-				dp_clk : in std_logic;
-				dp_q0obst : in std_logic_vector(15 downto 0);
-				dp_q0moeda : in std_logic_vector(15 downto 0);
-				dp_q1obst : in std_logic_vector(15 downto 0);
-				dp_q1moeda : in std_logic_vector(15 downto 0);
-				dp_cnt_pos : in std_logic;
-				dp_clr_pos : in std_logic;
-				dp_cnt_obj : in std_logic;
-				dp_clr_obj : in std_logic;
-				dp_set_linha : in std_logic;
-				dp_clr_linha : in std_logic;
-				dp_en_timer : in std_logic;
-				dp_clr_timer : in std_logic;
-				dp_en_E : in std_logic;
-				
-				dp_q0_pos : out std_logic;
-				dp_q1_pos : out std_logic;
-				dp_pos_15 : out std_logic;
-				dp_obj : out std_logic_vector(1 downto 0);
-				dp_linha : out std_logic;
-				dp_t2 : out std_logic;
-				dp_t40 : out std_logic;
-				dp_t100 : out std_logic;
-				dp_t1000 : out std_logic;
-				dp_E : out std_logic
-			);
+			dp_clk : in std_logic;
+			dp_q0obst : in std_logic_vector(15 downto 0);
+			dp_q0moeda : in std_logic_vector(15 downto 0);
+			dp_q1obst : in std_logic_vector(15 downto 0);
+			dp_q1moeda : in std_logic_vector(15 downto 0);
+			dp_cnt_pos : in std_logic;
+			dp_clr_pos : in std_logic;
+			dp_cnt_obj : in std_logic;
+			dp_clr_obj : in std_logic;
+			dp_set_linha : in std_logic;
+			dp_clr_linha : in std_logic;
+			dp_en_timer : in std_logic;
+			dp_clr_timer : in std_logic;
+			dp_en_E : in std_logic;
+			
+			dp_q0_pos : out std_logic;
+			dp_q1_pos : out std_logic;
+			dp_pos_15 : out std_logic;
+			dp_obj : out std_logic_vector(1 downto 0);
+			dp_linha : out std_logic;
+			dp_t2 : out std_logic;
+			dp_t40 : out std_logic;
+			dp_t100 : out std_logic;
+			dp_t1000 : out std_logic;
+			dp_E : out std_logic
+		);
 	end component;
 
 	component lcd_driver_fsm is
 		port(
-			fsm_clk : in std_logic;
-			fsm_cmd : in std_logic_vector(2 downto 0);
-			fsm_q0_pos : in std_logic;
-			fsm_q1_pos : in std_logic;
-			fsm_player_pos : in std_logic;
-			fsm_pos : in std_logic;
-			fsm_linha : in std_logic;
-			--fsm_timer : in std_logic_vector(9 downto 0);
-			fsm_t2 : in std_logic;
-			fsm_t40 : in std_logic;
-			fsm_t100 : in std_logic;
-			fsm_t1000 : in std_logic;
-			fsm_obj : in std_logic_vector(1 downto 0);
-			fsm_render : in std_logic;--usado
-			fsm_clr_pos : out std_logic;--usado
-			fsm_en_pos : out std_logic;--usado
-			fsm_clr_linha : out std_logic;--usado
-			fsm_set_linha : out std_logic;--usado
-			fsm_clr_timer : out std_logic;--usado
-			fsm_en_timer : out std_logic;--usado
-			fsm_clr_obj : out std_logic;--usado
-			fsm_en_obj : out std_logic;--usado
-			fsm_en_E : out std_logic;--usado
-			fsm_finish : out std_logic;--usado
-			fsm_rs : out std_logic;--usado
-			fsm_dt : out std_logic_vector(7 downto 0)--usado		
-		);
+		fsm_clk : in std_logic;
+		fsm_cmd : in std_logic_vector(2 downto 0);
+		fsm_q0_pos : in std_logic;
+		fsm_q1_pos : in std_logic;
+		fsm_player_pos : in std_logic;
+		fsm_pos : in std_logic;
+		fsm_linha : in std_logic;
+		fsm_t2 : in std_logic;
+		fsm_t40 : in std_logic;
+		fsm_t100 : in std_logic;
+		fsm_t1000 : in std_logic;
+		fsm_obj : in std_logic_vector(1 downto 0);
+		fsm_render : in std_logic;--usado
+		fsm_clr_pos : out std_logic;--usado
+		fsm_en_pos : out std_logic;--usado
+		fsm_clr_linha : out std_logic;--usado
+		fsm_set_linha : out std_logic;--usado
+		fsm_clr_timer : out std_logic;--usado
+		fsm_en_timer : out std_logic;--usado
+		fsm_clr_obj : out std_logic;--usado
+		fsm_en_obj : out std_logic;--usado
+		fsm_en_E : out std_logic;--usado
+		fsm_finish : out std_logic;--usado
+		fsm_rs : out std_logic;--usado
+		fsm_dt : out std_logic_vector(7 downto 0)--usado		
+	);
 		
 	end component;
 	
@@ -130,8 +129,8 @@ begin
 		dp_clr_pos => clr_pos,
 		dp_cnt_obj => en_obj,
 		dp_clr_obj => clr_obj,
-		dp_set_linha => clr_linha,
-		dp_clr_linha => set_linha,
+		dp_set_linha => set_linha,
+		dp_clr_linha => clr_linha,
 		dp_en_timer => en_timer,
 		dp_clr_timer => clr_timer ,
 		dp_en_E => en_E,

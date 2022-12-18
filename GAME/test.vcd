@@ -1,0 +1,833 @@
+$date
+  Sat Dec 17 23:06:59 2022
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module tb_game $end
+$var reg 1 ! clk $end
+$var reg 1 " start $end
+$var reg 1 # a $end
+$var reg 1 $ b $end
+$var reg 1 % lcd_rs $end
+$var reg 1 & lcd_e $end
+$var reg 1 ' lcd_on $end
+$var reg 1 ( lcd_blon $end
+$var reg 1 ) lcd_rw $end
+$var reg 8 * lcd_data[7:0] $end
+$scope module game_instance $end
+$var reg 1 + game_clock $end
+$var reg 1 , game_start $end
+$var reg 1 - game_a_button $end
+$var reg 1 . game_b_button $end
+$var reg 8 / lcd_data_pins[7:0] $end
+$var reg 1 0 lcd_rs_pin $end
+$var reg 1 1 lcd_e_pin $end
+$var reg 1 2 lcd_on_pin $end
+$var reg 1 3 lcd_blon_pin $end
+$var reg 1 4 lcd_rw_pin $end
+$var reg 1 5 finished $end
+$var reg 1 6 start $end
+$var reg 1 7 tem_moeda $end
+$var reg 1 8 tem_obst $end
+$var reg 1 9 collected $end
+$var reg 1 : ended $end
+$var reg 1 ; player $end
+$var reg 1 < end_of_frame $end
+$var reg 3 = result[2:0] $end
+$var reg 3 > cmd[2:0] $end
+$var reg 1 ? shift $end
+$var reg 1 @ en_cont1 $end
+$var reg 1 A en_cont2 $end
+$var reg 1 B clr_player $end
+$var reg 1 C set_player $end
+$var reg 1 D clr_timer $end
+$var reg 1 E clr_start $end
+$var reg 1 F render $end
+$var reg 1 G clr $end
+$var reg 1 H rmv_moeda $end
+$var reg 1 I rmv_obst $end
+$scope module controladora $end
+$var reg 1 J ctrl_clk $end
+$var reg 1 K ctrl_finish $end
+$var reg 1 L ctrl_start $end
+$var reg 1 M ctrl_q0_moeda $end
+$var reg 1 N ctrl_collected $end
+$var reg 1 O ctrl_q0_obst $end
+$var reg 1 P ctrl_ended $end
+$var reg 1 Q ctrl_player $end
+$var reg 1 R ctrl_frame_timer $end
+$var reg 3 S ctrl_result[2:0] $end
+$var reg 1 T ctrl_lfsr_shft $end
+$var reg 1 U ctrl_cnt_moeda1 $end
+$var reg 1 V ctrl_cnt_moeda2 $end
+$var reg 1 W ctrl_rmv_moeda $end
+$var reg 1 X ctrl_rmv_obst $end
+$var reg 1 Y ctrl_set_player $end
+$var reg 1 Z ctrl_clr_moeda $end
+$var reg 1 [ ctrl_clr_player $end
+$var reg 1 \ ctrl_clr_timer $end
+$var reg 1 ] ctrl_clr_start $end
+$var reg 1 ^ ctrl_render $end
+$var reg 3 _ ctrl_cmd[2:0] $end
+$comment estado_atual is not handled $end
+$comment prox_estado is not handled $end
+$upscope $end
+$scope module caminho_de_dados $end
+$var reg 1 ` dt_clr $end
+$var reg 1 a dt_clk $end
+$var reg 1 b dt_en_cont_1 $end
+$var reg 1 c dt_en_cont_2 $end
+$var reg 1 d dt_rmv_moeda $end
+$var reg 1 e dt_rmv_obst $end
+$var reg 1 f dt_shift $end
+$var reg 1 g dt_set_player $end
+$var reg 1 h dt_clr_player $end
+$var reg 1 i dt_clr_start $end
+$var reg 1 j dt_clr_timer $end
+$var reg 3 k dt_cmd[2:0] $end
+$var reg 1 l dt_a_key $end
+$var reg 1 m dt_b_key $end
+$var reg 1 n dt_start_key $end
+$var reg 1 o dt_render $end
+$var reg 1 p dt_player $end
+$var reg 1 q dt_start $end
+$var reg 1 r dt_end_of_frame $end
+$var reg 1 s dt_tem_moeda $end
+$var reg 1 t dt_tem_obstaculo $end
+$var reg 1 u dt_collected $end
+$var reg 1 v dt_ended $end
+$var reg 1 w dt_igual $end
+$var reg 1 x dt_maior $end
+$var reg 1 y dt_menor $end
+$var reg 1 z dt_finished $end
+$var reg 8 { dt_data[7:0] $end
+$var reg 1 | dt_rs $end
+$var reg 1 } dt_e $end
+$var reg 7 !" s1[6:0] $end
+$var reg 7 "" s2[6:0] $end
+$var reg 1 #" s3 $end
+$var reg 1 $" s4 $end
+$var reg 1 %" s5 $end
+$var reg 1 &" s7 $end
+$var reg 1 '" s12 $end
+$var reg 1 (" s13 $end
+$var reg 1 )" s14 $end
+$var reg 2 *" s6[1:0] $end
+$var reg 17 +" s8[16:0] $end
+$var reg 17 ," s9[16:0] $end
+$var reg 17 -" s10[16:0] $end
+$var reg 17 ." s11[16:0] $end
+$scope module contador_moedas_1 $end
+$var reg 1 /" cnt_reset $end
+$var reg 1 0" cnt_h $end
+$var reg 1 1" cnt_clk $end
+$var reg 7 2" cnt_q[6:0] $end
+$upscope $end
+$scope module contador_moedas_2 $end
+$var reg 1 3" cnt_reset $end
+$var reg 1 4" cnt_h $end
+$var reg 1 5" cnt_clk $end
+$var reg 7 6" cnt_q[6:0] $end
+$upscope $end
+$scope module comparador_moedas $end
+$var reg 7 7" cmp_a[6:0] $end
+$var reg 7 8" cmp_b[6:0] $end
+$var reg 1 9" cmp_igual $end
+$var reg 1 :" cmp_maior $end
+$var reg 1 ;" cmp_menor $end
+$upscope $end
+$scope module player_reg $end
+$var reg 1 <" r1_pre $end
+$var reg 1 =" r1_clr $end
+$var reg 1 >" r1_clk $end
+$var reg 1 ?" r1_q $end
+$var reg 1 @" d $end
+$var reg 1 A" en $end
+$var reg 1 B" qi $end
+$upscope $end
+$scope module start_reg $end
+$var reg 1 C" r1_pre $end
+$var reg 1 D" r1_clr $end
+$var reg 1 E" r1_clk $end
+$var reg 1 F" r1_q $end
+$var reg 1 G" d $end
+$var reg 1 H" en $end
+$var reg 1 I" qi $end
+$upscope $end
+$scope module frame_timer $end
+$var reg 1 J" tmr_clk $end
+$var reg 1 K" tmr_reset $end
+$var reg 1 L" tmr_q $end
+$upscope $end
+$scope module player_position $end
+$var reg 1 M" r1_pre $end
+$var reg 1 N" r1_clr $end
+$var reg 1 O" r1_clk $end
+$var reg 1 P" r1_q $end
+$var reg 1 Q" d $end
+$var reg 1 R" en $end
+$var reg 1 S" qi $end
+$upscope $end
+$scope module divisor_freq $end
+$var reg 1 T" div_clk $end
+$var reg 1 U" div_reset $end
+$var reg 1 V" div_q $end
+$var reg 1 W" tmp $end
+$upscope $end
+$scope module lfsr_instance $end
+$var reg 1 X" lfsr_clk $end
+$var reg 1 Y" lfsr_s0 $end
+$var reg 1 Z" lfsr_s1 $end
+$var reg 18 [" intern[17:0] $end
+$upscope $end
+$scope module cont_2b $end
+$var reg 1 \" cnt_clk $end
+$var reg 1 ]" cnt_reset $end
+$var reg 2 ^" cnt_q[1:0] $end
+$upscope $end
+$scope module sr_moeda $end
+$var reg 1 _" sr_in0 $end
+$var reg 1 `" sr_in1 $end
+$var reg 1 a" sr_clk $end
+$var reg 1 b" sr_rmv $end
+$var reg 1 c" sr_clr $end
+$var reg 17 d" sr_q0[16:0] $end
+$var reg 17 e" sr_q1[16:0] $end
+$var reg 1 f" in0 $end
+$var reg 1 g" in1 $end
+$var reg 1 h" clk $end
+$var reg 1 i" e $end
+$var reg 17 j" q0[16:0] $end
+$var reg 17 k" q1[16:0] $end
+$scope module instancia0_reg $end
+$var reg 1 l" reg18_in $end
+$var reg 1 m" reg18_e $end
+$var reg 1 n" reg18_clk $end
+$var reg 1 o" reg18_clr $end
+$var reg 17 p" reg18_q[16:0] $end
+$var reg 1 q" reg18_rmv $end
+$upscope $end
+$scope module instancia1_reg $end
+$var reg 1 r" reg18_in $end
+$var reg 1 s" reg18_e $end
+$var reg 1 t" reg18_clk $end
+$var reg 1 u" reg18_clr $end
+$var reg 17 v" reg18_q[16:0] $end
+$var reg 1 w" reg18_rmv $end
+$upscope $end
+$upscope $end
+$scope module sr_obstaculo $end
+$var reg 1 x" sr_in0 $end
+$var reg 1 y" sr_in1 $end
+$var reg 1 z" sr_clk $end
+$var reg 1 {" sr_rmv $end
+$var reg 1 |" sr_clr $end
+$var reg 17 }" sr_q0[16:0] $end
+$var reg 17 !# sr_q1[16:0] $end
+$var reg 1 "# in0 $end
+$var reg 1 ## in1 $end
+$var reg 1 $# clk $end
+$var reg 1 %# e $end
+$var reg 17 &# q0[16:0] $end
+$var reg 17 '# q1[16:0] $end
+$scope module instancia0_reg $end
+$var reg 1 (# reg18_in $end
+$var reg 1 )# reg18_e $end
+$var reg 1 *# reg18_clk $end
+$var reg 1 +# reg18_clr $end
+$var reg 17 ,# reg18_q[16:0] $end
+$var reg 1 -# reg18_rmv $end
+$upscope $end
+$scope module instancia1_reg $end
+$var reg 1 .# reg18_in $end
+$var reg 1 /# reg18_e $end
+$var reg 1 0# reg18_clk $end
+$var reg 1 1# reg18_clr $end
+$var reg 17 2# reg18_q[16:0] $end
+$var reg 1 3# reg18_rmv $end
+$upscope $end
+$upscope $end
+$scope module comp1 $end
+$var reg 1 4# cmp_m $end
+$var reg 1 5# cmp_p $end
+$var reg 1 6# cmp_q $end
+$upscope $end
+$scope module comp2 $end
+$var reg 1 7# cmp_m $end
+$var reg 1 8# cmp_p $end
+$var reg 1 9# cmp_q $end
+$upscope $end
+$scope module div_freq_10khz $end
+$var reg 1 :# div_clk $end
+$var reg 1 ;# div_reset $end
+$var reg 1 <# div_q $end
+$var reg 1 =# tmp $end
+$upscope $end
+$scope module lcd $end
+$var reg 1 ># clk $end
+$var reg 3 ?# cmd[2:0] $end
+$var reg 1 @# render $end
+$var reg 16 A# q0_moeda[15:0] $end
+$var reg 16 B# q1_moeda[15:0] $end
+$var reg 16 C# q0_obstaculo[15:0] $end
+$var reg 16 D# q1_obstaculo[15:0] $end
+$var reg 1 E# player_pos $end
+$var reg 1 F# finished $end
+$var reg 8 G# data[7:0] $end
+$var reg 1 H# e $end
+$var reg 1 I# rs $end
+$var reg 1 J# q0_pos $end
+$var reg 1 K# q1_pos $end
+$var reg 1 L# pos_15 $end
+$var reg 1 M# linha $end
+$var reg 1 N# t2 $end
+$var reg 1 O# t40 $end
+$var reg 1 P# t100 $end
+$var reg 1 Q# t1000 $end
+$var reg 1 R# en_e $end
+$var reg 1 S# clr_pos $end
+$var reg 1 T# en_pos $end
+$var reg 1 U# clr_linha $end
+$var reg 1 V# set_linha $end
+$var reg 1 W# en_obj $end
+$var reg 1 X# clr_obj $end
+$var reg 1 Y# clr_timer $end
+$var reg 1 Z# en_timer $end
+$var reg 2 [# obj[1:0] $end
+$scope module controladora $end
+$var reg 1 \# fsm_clk $end
+$var reg 3 ]# fsm_cmd[2:0] $end
+$var reg 1 ^# fsm_q0_pos $end
+$var reg 1 _# fsm_q1_pos $end
+$var reg 1 `# fsm_player_pos $end
+$var reg 1 a# fsm_pos $end
+$var reg 1 b# fsm_linha $end
+$var reg 1 c# fsm_t2 $end
+$var reg 1 d# fsm_t40 $end
+$var reg 1 e# fsm_t100 $end
+$var reg 1 f# fsm_t1000 $end
+$var reg 2 g# fsm_obj[1:0] $end
+$var reg 1 h# fsm_render $end
+$var reg 1 i# fsm_clr_pos $end
+$var reg 1 j# fsm_en_pos $end
+$var reg 1 k# fsm_clr_linha $end
+$var reg 1 l# fsm_set_linha $end
+$var reg 1 m# fsm_clr_timer $end
+$var reg 1 n# fsm_en_timer $end
+$var reg 1 o# fsm_clr_obj $end
+$var reg 1 p# fsm_en_obj $end
+$var reg 1 q# fsm_en_e $end
+$var reg 1 r# fsm_finish $end
+$var reg 1 s# fsm_rs $end
+$var reg 8 t# fsm_dt[7:0] $end
+$comment atual_estado is not handled $end
+$comment prox_estado is not handled $end
+$upscope $end
+$scope module datapath $end
+$var reg 1 u# dp_clk $end
+$var reg 16 v# dp_q0obst[15:0] $end
+$var reg 16 w# dp_q0moeda[15:0] $end
+$var reg 16 x# dp_q1obst[15:0] $end
+$var reg 16 y# dp_q1moeda[15:0] $end
+$var reg 1 z# dp_cnt_pos $end
+$var reg 1 {# dp_clr_pos $end
+$var reg 1 |# dp_cnt_obj $end
+$var reg 1 }# dp_clr_obj $end
+$var reg 1 !$ dp_set_linha $end
+$var reg 1 "$ dp_clr_linha $end
+$var reg 1 #$ dp_en_timer $end
+$var reg 1 $$ dp_clr_timer $end
+$var reg 1 %$ dp_en_e $end
+$var reg 1 &$ dp_q0_pos $end
+$var reg 1 '$ dp_q1_pos $end
+$var reg 1 ($ dp_pos_15 $end
+$var reg 2 )$ dp_obj[1:0] $end
+$var reg 1 *$ dp_linha $end
+$var reg 1 +$ dp_t2 $end
+$var reg 1 ,$ dp_t40 $end
+$var reg 1 -$ dp_t100 $end
+$var reg 1 .$ dp_t1000 $end
+$var reg 1 /$ dp_e $end
+$var reg 1 0$ s_m_oq0 $end
+$var reg 1 1$ s_m_oq1 $end
+$var reg 1 2$ s_m_mq0 $end
+$var reg 1 3$ s_m_mq1 $end
+$var reg 2 4$ s_obj[1:0] $end
+$var reg 4 5$ s_pos[3:0] $end
+$var reg 10 6$ s_timer[9:0] $end
+$var reg 10 7$ s_2[9:0] $end
+$var reg 10 8$ s_40[9:0] $end
+$var reg 10 9$ s_100[9:0] $end
+$var reg 10 :$ s_1000[9:0] $end
+$scope module mux15_obstaculo_q0 $end
+$var reg 16 ;$ mux_inputs[15:0] $end
+$var reg 4 <$ mux_control[3:0] $end
+$var reg 1 =$ mux_output $end
+$upscope $end
+$scope module mux15_obstaculo_q1 $end
+$var reg 16 >$ mux_inputs[15:0] $end
+$var reg 4 ?$ mux_control[3:0] $end
+$var reg 1 @$ mux_output $end
+$upscope $end
+$scope module mux15_moeda_q0 $end
+$var reg 16 A$ mux_inputs[15:0] $end
+$var reg 4 B$ mux_control[3:0] $end
+$var reg 1 C$ mux_output $end
+$upscope $end
+$scope module mux15_moeda_q1 $end
+$var reg 16 D$ mux_inputs[15:0] $end
+$var reg 4 E$ mux_control[3:0] $end
+$var reg 1 F$ mux_output $end
+$upscope $end
+$scope module mux2_q0 $end
+$var reg 2 G$ mux2_inputs[1:0] $end
+$var reg 1 H$ mux2_control $end
+$var reg 1 I$ mux2_output $end
+$upscope $end
+$scope module mux2_q1 $end
+$var reg 2 J$ mux2_inputs[1:0] $end
+$var reg 1 K$ mux2_control $end
+$var reg 1 L$ mux2_output $end
+$upscope $end
+$scope module cont_pos $end
+$var reg 1 M$ cont4_h $end
+$var reg 1 N$ cont4_clk $end
+$var reg 1 O$ cont4_clr $end
+$var reg 4 P$ cont4_q[3:0] $end
+$upscope $end
+$scope module cont_obj $end
+$var reg 1 Q$ cnt_en $end
+$var reg 1 R$ cnt_clk $end
+$var reg 1 S$ cnt_reset $end
+$var reg 2 T$ cnt_q[1:0] $end
+$upscope $end
+$scope module reg_linha $end
+$var reg 1 U$ r1_pre $end
+$var reg 1 V$ r1_clr $end
+$var reg 1 W$ r1_clk $end
+$var reg 1 X$ r1_q $end
+$var reg 1 Y$ d $end
+$var reg 1 Z$ en $end
+$var reg 1 [$ qi $end
+$upscope $end
+$scope module timer $end
+$var reg 1 \$ cnt10_clk $end
+$var reg 1 ]$ cnt10_reset $end
+$var reg 1 ^$ cnt10_h $end
+$var reg 10 _$ cnt10_q[9:0] $end
+$upscope $end
+$scope module comp_t2 $end
+$var reg 10 `$ comp_a[9:0] $end
+$var reg 10 a$ comp_b[9:0] $end
+$var reg 1 b$ comp_s $end
+$upscope $end
+$scope module comp_t40 $end
+$var reg 10 c$ comp_a[9:0] $end
+$var reg 10 d$ comp_b[9:0] $end
+$var reg 1 e$ comp_s $end
+$upscope $end
+$scope module comp_t100 $end
+$var reg 10 f$ comp_a[9:0] $end
+$var reg 10 g$ comp_b[9:0] $end
+$var reg 1 h$ comp_s $end
+$upscope $end
+$scope module comp_t1000 $end
+$var reg 10 i$ comp_a[9:0] $end
+$var reg 10 j$ comp_b[9:0] $end
+$var reg 1 k$ comp_s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0"
+0#
+0$
+0%
+0&
+1'
+0(
+0)
+b00000000 *
+0+
+0,
+0-
+0.
+b00000000 /
+00
+01
+12
+03
+04
+05
+06
+07
+08
+19
+1:
+0;
+0<
+b001 =
+b000 >
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+0O
+1P
+0Q
+0R
+b001 S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+b000 _
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+b000 k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+1u
+1v
+1w
+0x
+0y
+0z
+b00000000 {
+0|
+0}
+b0000000 !"
+b0000000 ""
+0#"
+0$"
+0%"
+0&"
+U'"
+0("
+0)"
+bUU *"
+b00000000000000000 +"
+b00000000000000000 ,"
+b00000000000000000 -"
+b00000000000000000 ."
+0/"
+00"
+01"
+b0000000 2"
+03"
+04"
+05"
+b0000000 6"
+b0000000 7"
+b0000000 8"
+19"
+0:"
+0;"
+0<"
+0="
+0>"
+0?"
+0@"
+0A"
+0B"
+0C"
+0D"
+0E"
+0F"
+0G"
+0H"
+0I"
+0J"
+0K"
+0L"
+0M"
+0N"
+0O"
+0P"
+0Q"
+0R"
+0S"
+0T"
+0U"
+0V"
+0W"
+0X"
+0Y"
+0Z"
+b000110010000000000 ["
+0\"
+0]"
+bUU ^"
+0_"
+0`"
+0a"
+0b"
+0c"
+b00000000000000000 d"
+b00000000000000000 e"
+0f"
+0g"
+0h"
+1i"
+b00000000000000000 j"
+b00000000000000000 k"
+0l"
+1m"
+0n"
+0o"
+b00000000000000000 p"
+0q"
+0r"
+1s"
+0t"
+0u"
+b00000000000000000 v"
+0w"
+Ux"
+0y"
+0z"
+0{"
+0|"
+b00000000000000000 }"
+b00000000000000000 !#
+U"#
+0##
+0$#
+1%#
+b00000000000000000 &#
+b00000000000000000 '#
+U(#
+1)#
+0*#
+0+#
+b00000000000000000 ,#
+0-#
+0.#
+1/#
+00#
+01#
+b00000000000000000 2#
+03#
+04#
+05#
+16#
+07#
+08#
+19#
+0:#
+0;#
+0<#
+0=#
+0>#
+b000 ?#
+0@#
+b0000000000000000 A#
+b0000000000000000 B#
+b0000000000000000 C#
+b0000000000000000 D#
+0E#
+0F#
+b00000000 G#
+0H#
+0I#
+0J#
+0K#
+0L#
+0M#
+0N#
+0O#
+0P#
+0Q#
+0R#
+1S#
+0T#
+1U#
+0V#
+0W#
+1X#
+1Y#
+0Z#
+b00 [#
+0\#
+b000 ]#
+0^#
+0_#
+0`#
+0a#
+0b#
+0c#
+0d#
+0e#
+0f#
+b00 g#
+0h#
+1i#
+0j#
+1k#
+0l#
+1m#
+0n#
+1o#
+0p#
+0q#
+0r#
+0s#
+b00000000 t#
+0u#
+b0000000000000000 v#
+b0000000000000000 w#
+b0000000000000000 x#
+b0000000000000000 y#
+0z#
+1{#
+0|#
+1}#
+0!$
+1"$
+0#$
+1$$
+0%$
+0&$
+0'$
+0($
+b00 )$
+0*$
+0+$
+0,$
+0-$
+0.$
+0/$
+00$
+01$
+02$
+03$
+b00 4$
+b0000 5$
+b0000000000 6$
+b0000000010 7$
+b0000101000 8$
+b0001100100 9$
+b1111101000 :$
+b0000000000000000 ;$
+b0000 <$
+0=$
+b0000000000000000 >$
+b0000 ?$
+0@$
+b0000000000000000 A$
+b0000 B$
+0C$
+b0000000000000000 D$
+b0000 E$
+0F$
+b00 G$
+0H$
+0I$
+b00 J$
+0K$
+0L$
+0M$
+0N$
+1O$
+b0000 P$
+0Q$
+0R$
+1S$
+b00 T$
+0U$
+1V$
+0W$
+0X$
+0Y$
+0Z$
+0[$
+0\$
+1]$
+0^$
+b0000000000 _$
+b0000000000 `$
+b0000000010 a$
+0b$
+b0000000000 c$
+b0000101000 d$
+0e$
+b0000000000 f$
+b0001100100 g$
+0h$
+b0000000000 i$
+b1111101000 j$
+0k$
+#10000000
+1!
+1+
+1J
+1a
+11"
+15"
+1>"
+1E"
+1J"
+1O"
+1:#
+#20000000
+0!
+0+
+0J
+0a
+01"
+05"
+0>"
+0E"
+0J"
+0O"
+0:#

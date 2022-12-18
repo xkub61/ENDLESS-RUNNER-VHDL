@@ -23,8 +23,7 @@ entity controladora_jogo is
 		ctrl_RMV_MOEDA : out std_logic;
 		ctrl_RMV_OBST : out std_logic;
 		ctrl_SET_PLAYER : out std_logic;
-		ctrl_CLR_MOEDA1: out std_logic;
-		ctrl_CLR_MOEDA2 : out std_logic;
+		ctrl_CLR_MOEDA : out std_logic;
 		ctrl_CLR_PLAYER : out std_logic;
 		ctrl_CLR_TIMER : out std_logic;
 		ctrl_CLR_START : out std_logic;
@@ -34,7 +33,7 @@ entity controladora_jogo is
 end controladora_jogo;
 
 architecture arch of controladora_jogo is
-	type estado is (s0,s1,s2,s3,s4,s5,s6,s7,s8,s9,
+	type estado is (s0,s1,s2,s3,s4,s5,s6,s7,sa8,s8,s9,
 						 s10,s11,s12,s13,s14,s15,s16,s17,s18,s19);
 	signal estado_atual,prox_estado : estado := s0;
 begin
@@ -47,9 +46,10 @@ begin
 	end process;
 	
 	logico:
-	process(ctrl_CLK,ctrl_FINISH,ctrl_START) is
+	process(ctrl_CLK,ctrl_FINISH,ctrl_START,estado_atual) is
 	begin
 		case estado_atual is
+		
 			when s0 => -- ESPERA O LCD INICIALIZAR
 				ctrl_LFSR_SHFT <= '0';
 				ctrl_CNT_MOEDA1 <= '0';
@@ -57,8 +57,7 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '0';
@@ -78,8 +77,7 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '0';
@@ -99,8 +97,7 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '1';
-				ctrl_CLR_MOEDA2 <= '1';
+				ctrl_CLR_MOEDA <= '1';
 				ctrl_CLR_PLAYER <= '1';
 				ctrl_CLR_TIMER <= '1';
 				ctrl_CLR_START <= '1';
@@ -109,15 +106,14 @@ begin
 			
 				prox_estado <= s3;
 				
-			when s3 => --TESTA SE HA UMA MOEDA NA POSICAO DO PLAYER
+			when s3 => --TESTA SE HA UMA MOEDA  NA POSICAO DO PLAYER
 				ctrl_LFSR_SHFT <= '0';
 				ctrl_CNT_MOEDA1 <= '0';
 				ctrl_CNT_MOEDA2 <= '0';
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '0';
@@ -137,8 +133,7 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '0';
@@ -158,8 +153,7 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '0';
@@ -179,15 +173,14 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '0';
 				ctrl_RENDER <= '0';
 				ctrl_CMD <= "000";
 			
-				prox_estado <= s8;
+				prox_estado <= sa8;
 			
 			when s7 => --ADICIONA UMA MOEDA AO PLACAR DO PLAYER 2
 				ctrl_LFSR_SHFT <= '0';
@@ -196,25 +189,41 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '0';
 				ctrl_RENDER <= '0';
 				ctrl_CMD <= "000";
 			
-				prox_estado <= s8;
+				prox_estado <= sa8;
 			
-			when s8 => --EXCLUI A MOEDA DO REGISTRADOR 
+
+				when sa8 => --EXCLUI A MOEDA DO REGISTRADOR 
 				ctrl_LFSR_SHFT <= '0';
 				ctrl_CNT_MOEDA1 <= '0';
 				ctrl_CNT_MOEDA2 <= '0';
 				ctrl_RMV_MOEDA <= '1';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
+				ctrl_CLR_PLAYER <= '0';
+				ctrl_CLR_TIMER <= '0';
+				ctrl_CLR_START <= '0';
+				ctrl_RENDER <= '0';
+				ctrl_CMD <= "000";
+
+				prox_estado <= s8;
+
+
+			when s8 => --TESTA SE TEM UM OBSTACULO NA POS DO PLAYER 
+				ctrl_LFSR_SHFT <= '0';
+				ctrl_CNT_MOEDA1 <= '0';
+				ctrl_CNT_MOEDA2 <= '0';
+				ctrl_RMV_MOEDA <= '0';
+				ctrl_RMV_OBST <= '0';
+				ctrl_SET_PLAYER <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '0';
@@ -234,8 +243,7 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '0';
@@ -243,7 +251,7 @@ begin
 				ctrl_CMD <= "000";
 				
 				if ctrl_ENDED = '1' then
-					prox_estado <= s14;
+					prox_estado <= s13;
 				else 
 					prox_estado <= s10;
 				end if;
@@ -255,8 +263,7 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '0';
@@ -276,8 +283,7 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '0';
@@ -297,8 +303,7 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '1';
 				ctrl_CLR_START <= '0';
@@ -314,8 +319,7 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '1';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '0';
@@ -335,8 +339,7 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '1';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '1';
@@ -352,8 +355,7 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '0';
@@ -361,7 +363,7 @@ begin
 				ctrl_CMD <= "101";
 				
 				if ctrl_START = '1' then
-					prox_estado <= s4;
+					prox_estado <= s3;
 				else 
 					prox_estado <= s15;
 				end if;
@@ -373,8 +375,7 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '0';
@@ -396,8 +397,7 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '0';
@@ -417,8 +417,7 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '0';
@@ -438,8 +437,7 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '0';
@@ -459,8 +457,7 @@ begin
 				ctrl_RMV_MOEDA <= '0';
 				ctrl_RMV_OBST <= '0';
 				ctrl_SET_PLAYER <= '0';
-				ctrl_CLR_MOEDA1 <= '0';
-				ctrl_CLR_MOEDA2 <= '0';
+				ctrl_CLR_MOEDA <= '0';
 				ctrl_CLR_PLAYER <= '0';
 				ctrl_CLR_TIMER <= '0';
 				ctrl_CLR_START <= '0';

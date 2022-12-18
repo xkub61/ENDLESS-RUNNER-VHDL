@@ -35,18 +35,20 @@ end lcd_driver_fsm;
 
 architecture fsm of lcd_driver_fsm is
 
-	type estado is   (s0,s1,s2,s3,s4,s5,s6,s7,s8,s9,
-							s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,
-							s20,s21,s22,s23,s24,s25,s26,s27,s28,s29,
-							s30,s31,s32,s33,s34,s35,s36,s37,s38,s39,
-							s40,s41,s42,s43,s44,s45,s46,s47,s48,s49,
-							s50,s51,s52);
-	signal atual_estado, prox_estado: estado := s0;
+	type estado is   (	s0,s1,s2,s3,s4,s5,s6,s7,s8,s9,
+						s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,
+						s20,s21,s22,s23,s24,s25,s26,s27,s28,s29,
+						s30,s31,s32,s33,s34,s35,s36,s37,s38,s39,
+						s40,s41,s42,s43,s44,s45,s46,s47,s48,s49,
+						s50,s51,s52,s53,s54,s55,s56,s57,s58,s59,
+						s60,s61,s62,s63);
+	
+	signal atual_estado, prox_estado: estado;
 
 
 begin
 	sequencial : 
-	process(fsm_clk) is
+	process(fsm_clk,atual_estado,prox_estado) is
 	begin
 		if rising_edge(fsm_clk) then
 			atual_estado <= prox_estado;
@@ -54,7 +56,21 @@ begin
 	end process;
 	
 	logico :
-		process( fsm_q0_pos,fsm_q1_pos, atual_estado) is
+		process(	atual_estado,
+					prox_estado,
+					fsm_clk ,
+					fsm_cmd ,
+					fsm_q0_pos ,
+					fsm_q1_pos ,
+					fsm_player_pos, 
+					fsm_pos,
+					fsm_linha,
+					fsm_t2,
+					fsm_t40 ,
+					fsm_t100 ,
+					fsm_t1000, 
+					fsm_obj ,
+					fsm_render) is
 		begin
 			case atual_estado is
 				when s0 => --CLEAR
@@ -87,7 +103,7 @@ begin
 					fsm_rs <= '0';
 					fsm_dt <= "00000000";
 					
-					if fsm_t1000 = '1' then --100 ms
+					if fsm_t1000 = '1'then --100 ms
 						prox_estado <= s2;
 					else
 						prox_estado <= s1;
@@ -98,7 +114,7 @@ begin
 					fsm_en_pos <= '0';
 					fsm_clr_linha <= '0';
 					fsm_set_linha <= '0';
-					fsm_clr_timer <= '0';
+					fsm_clr_timer <= '1';
 					fsm_en_timer <= '0';
 					fsm_clr_obj <= '0';
 					fsm_en_obj <= '0';
@@ -134,7 +150,7 @@ begin
 					fsm_en_pos <= '0';
 					fsm_clr_linha <= '0';
 					fsm_set_linha <= '0';
-					fsm_clr_timer <= '0';
+					fsm_clr_timer <= '1';
 					fsm_en_timer <= '0';
 					fsm_clr_obj <= '0';
 					fsm_en_obj <= '0';
@@ -171,7 +187,7 @@ begin
 					fsm_en_pos <= '0';
 					fsm_clr_linha <= '0';
 					fsm_set_linha <= '0';
-					fsm_clr_timer <= '0';
+					fsm_clr_timer <= '1';
 					fsm_en_timer <= '0';
 					fsm_clr_obj <= '0';
 					fsm_en_obj <= '0';

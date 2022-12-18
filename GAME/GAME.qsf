@@ -50,32 +50,6 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
 set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_Contador_7_bits -section_id eda_simulation
-set_global_assignment -name VHDL_FILE controladora/controladora_jogo.vhd
-set_global_assignment -name VHDL_FILE datapath/lcd/tb_reg_4.vhd
-set_global_assignment -name VHDL_FILE datapath/lcd/reg_1bit.vhd
-set_global_assignment -name VHDL_FILE datapath/lcd/mux_15.vhd
-set_global_assignment -name VHDL_FILE datapath/lcd/mux_2.vhd
-set_global_assignment -name VHDL_FILE datapath/lcd/lcd_driver_fsm.vhd
-set_global_assignment -name VHDL_FILE datapath/lcd/lcd_driver_dp.vhd
-set_global_assignment -name VHDL_FILE datapath/lcd/lcd_driver.vhd
-set_global_assignment -name VHDL_FILE datapath/lcd/Contador_2_bits.vhd
-set_global_assignment -name VHDL_FILE datapath/lcd/cont_10.vhd
-set_global_assignment -name VHDL_FILE datapath/lcd/cont_4.vhd
-set_global_assignment -name VHDL_FILE datapath/lcd/comp_10.vhd
-set_global_assignment -name VHDL_FILE datapath/lcd/comp_2.vhd
-set_global_assignment -name VHDL_FILE datapath/timer.vhd
-set_global_assignment -name VHDL_FILE datapath/sr18bits_dual.vhd
-set_global_assignment -name VHDL_FILE datapath/reg18bits.vhd
-set_global_assignment -name VHDL_FILE datapath/reg2bits.vhd
-set_global_assignment -name VHDL_FILE datapath/div_freq_5000.vhd
-set_global_assignment -name VHDL_FILE datapath/div_freq.vhd
-set_global_assignment -name VHDL_FILE datapath/Data_path.vhd
-set_global_assignment -name VHDL_FILE datapath/contador_7_bits.vhd
-set_global_assignment -name VHDL_FILE datapath/contador_4.vhd
-set_global_assignment -name VHDL_FILE datapath/comparador_7_bits.vhd
-set_global_assignment -name VHDL_FILE datapath/Comparador.vhd
-set_global_assignment -name VHDL_FILE datapath/lfsr.vhd
-set_global_assignment -name VHDL_FILE GAME.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -97,4 +71,35 @@ set_location_assignment PIN_K1 -to lcd_rs_pin
 set_location_assignment PIN_K2 -to lcd_blon_pin
 set_location_assignment PIN_L4 -to lcd_on_pin
 set_location_assignment PIN_K4 -to lcd_rw_pin
+set_global_assignment -name VHDL_FILE controladora_jogo.vhd
+set_global_assignment -name VHDL_FILE tb_controladora_jogo.vhd
+set_global_assignment -name VHDL_FILE reg2bits.vhd
+set_global_assignment -name VHDL_FILE cont_4.vhd
+set_global_assignment -name VHDL_FILE cont_10.vhd
+set_global_assignment -name VHDL_FILE tb_reg_4.vhd
+set_global_assignment -name VHDL_FILE mux_15.vhd
+set_global_assignment -name VHDL_FILE mux_2.vhd
+set_global_assignment -name VHDL_FILE reg_1bit.vhd
+set_global_assignment -name VHDL_FILE Contador_2_bits.vhd
+set_global_assignment -name VHDL_FILE comp_10.vhd
+set_global_assignment -name VHDL_FILE comp_2.vhd
+set_global_assignment -name VHDL_FILE contador_7_bits.vhd
+set_global_assignment -name VHDL_FILE Comparador.vhd
+set_global_assignment -name VHDL_FILE comparador_7_bits.vhd
+set_global_assignment -name VHDL_FILE reg18bits.vhd
+set_global_assignment -name VHDL_FILE timer.vhd
+set_global_assignment -name VHDL_FILE div_freq.vhd
+set_global_assignment -name VHDL_FILE lfsr.vhd
+set_global_assignment -name VHDL_FILE sr18bits_dual.vhd
+set_global_assignment -name VHDL_FILE lcd_driver_dp.vhd
+set_global_assignment -name VHDL_FILE div_freq_5000.vhd
+set_global_assignment -name VHDL_FILE contador_4.vhd
+set_global_assignment -name VHDL_FILE Data_path.vhd
+set_global_assignment -name VHDL_FILE tb_lcd_driver.vhd
+set_global_assignment -name VHDL_FILE lcd_driver_fsm.vhd
+set_global_assignment -name VHDL_FILE lcd_driver.vhd
+set_global_assignment -name VHDL_FILE tb_GAME.vhd
+set_global_assignment -name VHDL_FILE GAME.vhd
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
