@@ -1,0 +1,26 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/reg_1bit.vhd}
+vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/mux_15.vhd}
+vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/mux_2.vhd}
+vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/lcd_driver_dp.vhd}
+vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/Contador_2_bits.vhd}
+vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/cont_10.vhd}
+vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/cont_4.vhd}
+vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/comp_10.vhd}
+vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/lcd_driver_fsm.vhd}
+vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/lcd_driver.vhd}
+
+vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/tb_lcd_driver.vhd}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_lcd_driver
+
+add wave *
+view structure
+view signals
+run 200 ms

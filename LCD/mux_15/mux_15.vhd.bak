@@ -1,0 +1,33 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity mux_15 is
+	port(
+		mux_inputs : in std_logic_vector(15 downto 0);
+		mux_control : in std_logic_vector(3 downto 0);
+		mux_output : out std_logic
+		);
+end mux_15;
+
+architecture arch of mux_15 is
+
+begin
+		mux_output <= 
+			mux_inputs(0) when mux_control = "0000" else
+			mux_inputs(1) when mux_control = "0001" else
+			mux_inputs(2) when mux_control = "0010" else
+			mux_inputs(3) when mux_control = "0011" else
+			mux_inputs(4) when mux_control = "0100" else
+			mux_inputs(5) when mux_control = "0101" else
+			mux_inputs(6) when mux_control = "0110" else
+			mux_inputs(7) when mux_control = "0111" else
+			mux_inputs(8) when mux_control = "1000" else
+			mux_inputs(9) when mux_control = "1001" else
+			mux_inputs(10) when mux_control = "1010" else
+			mux_inputs(11) when mux_control = "1011" else
+			mux_inputs(12) when mux_control = "1100" else
+			mux_inputs(13) when mux_control = "1101" else
+			mux_inputs(14) when mux_control = "1110" else
+			mux_inputs(15);
+			

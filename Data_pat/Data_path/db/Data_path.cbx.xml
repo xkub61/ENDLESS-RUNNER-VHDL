@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Data_path">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Data_path|sr18bits_dual:sr_moedas|reg18bits:instancia1_reg|altshift_taps:tmp_rtl_0" CBX_FILE_NAME="shift_taps_6am.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

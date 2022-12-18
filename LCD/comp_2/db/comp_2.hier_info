@@ -1,0 +1,8 @@
+|comp_2
+cmp2_A[0] => LessThan0.IN2
+cmp2_A[1] => LessThan0.IN1
+cmp2_B[0] => LessThan0.IN4
+cmp2_B[1] => LessThan0.IN3
+cmp2_OUT <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+

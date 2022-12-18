@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity cont_10 is
+	port(
+			cnt10_clk : in std_logic;
+			cnt10_reset : in std_logic;
+			cnt10_h : in std_logic;
+			cnt10_q : out std_logic_vector(9 downto 0)
+		);
+end cont_10;
+
+architecture arch of cont_10 is
+begin
+	process(cnt10_clk,cnt10_reset)
+		variable i : unsigned(9 downto 0) := "0000000000"; 
+		begin
+		
+		if cnt10_reset = '1' then
+			i := "0000000000";
+		else
+			if rising_edge(cnt10_clk) and cnt10_h = '1' then
+				i := i + "0000000001";
+			end if;
+		end if;
+		
+		cnt10_q <= std_logic_vector(i);
+	end process;
+end arch;

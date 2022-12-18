@@ -6,7 +6,7 @@ entity tb_timer_frame is
 end tb_timer_frame;
 
 architecture tb of tb_timer_frame is
-	component timer_frame is
+	component timer is
 		generic(
 				MIN_COUNT : natural := 0;
 				MAX_COUNT : natural := 2097151
@@ -21,7 +21,7 @@ architecture tb of tb_timer_frame is
 	signal reset , q : std_logic;
 	begin
 	
-	instancia_timer : timer_frame port map(
+	instancia_timer : timer port map(
 		tmr_clk =>  clk,
 		tmr_reset => reset,
 		tmr_q => q

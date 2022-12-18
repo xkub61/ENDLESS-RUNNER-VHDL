@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\2022-2\Laboratorio SD\Trabalho final\LCD\lcd_driver_fsm\simulation\modelsim
+Elcd_driver_fsm
+Z1 w1671130574
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dD:\2022-2\Laboratorio SD\Trabalho final\LCD\lcd_driver_fsm\simulation\modelsim
+Z6 8D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver_fsm/lcd_driver_fsm.vhd
+Z7 FD:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver_fsm/lcd_driver_fsm.vhd
+l0
+L5
+VzeE@oM65M:EmNQ:g[HikB3
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1671209388.551000
+Z10 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver_fsm/lcd_driver_fsm.vhd|
+Z11 !s107 D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver_fsm/lcd_driver_fsm.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 1eWDI=<031_<@IDEmjbC73
+!i10b 1
+Afsm
+R2
+R3
+R4
+DEx4 work 14 lcd_driver_fsm 0 22 zeE@oM65M:EmNQ:g[HikB3
+l48
+L37
+V1i1N1RWz^gT8dJdQIz^@U0
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 3NS7]D>6ZLS5GX3GAE2_h0
+!i10b 1
+Etb_lcd_driver_fsm
+Z14 w1671209104
+R2
+R3
+R4
+R5
+Z15 8D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver_fsm/tb_lcd_driver_fsm.vhd
+Z16 FD:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver_fsm/tb_lcd_driver_fsm.vhd
+l0
+L5
+V52IDi@>NXZEIn7Tf1`zGY2
+!s100 6jAhkHdmF7j?T8HYFjMbi3
+R8
+31
+!i10b 1
+Z17 !s108 1671209389.081000
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver_fsm/tb_lcd_driver_fsm.vhd|
+Z19 !s107 D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver_fsm/tb_lcd_driver_fsm.vhd|
+R12
+R13
+Atb
+R2
+R3
+R4
+DEx4 work 17 tb_lcd_driver_fsm 0 22 52IDi@>NXZEIn7Tf1`zGY2
+l69
+L8
+VR73a_H23^lURhV=V7?=mf1
+!s100 WG[HaCn[LLG^S3e7AC<nA1
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13

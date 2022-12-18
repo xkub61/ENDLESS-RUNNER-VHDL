@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity mux_2 is
+	port(
+		mux_inputs : in std_logic_vector(1 downto 0);
+		mux_control : in std_logic;
+		mux_output : out std_logic
+		);
+end mux_2;
+
+architecture arch of mux_15 is
+
+begin
+		with mux_control select
+		mux_output <= 
+			mux_inputs(0) 	when '0',
+			mux_inputs(1) 	others,
+end arch;

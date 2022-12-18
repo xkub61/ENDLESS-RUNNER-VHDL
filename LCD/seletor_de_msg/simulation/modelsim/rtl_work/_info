@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\2022-2\Laboratorio SD\Trabalho final\LCD\seletor_de_msg\simulation\modelsim
+Eseletor_de_msg
+Z1 w1670742648
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dD:\2022-2\Laboratorio SD\Trabalho final\LCD\seletor_de_msg\simulation\modelsim
+Z6 8D:/2022-2/Laboratorio SD/Trabalho final/LCD/seletor_de_msg/seletor_de_msg.vhd
+Z7 FD:/2022-2/Laboratorio SD/Trabalho final/LCD/seletor_de_msg/seletor_de_msg.vhd
+l0
+L5
+V7=X1mi9`PZ0136IHHkJ880
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1670742697.074000
+Z10 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/LCD/seletor_de_msg/seletor_de_msg.vhd|
+Z11 !s107 D:/2022-2/Laboratorio SD/Trabalho final/LCD/seletor_de_msg/seletor_de_msg.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 gUFcBSZ2^m;dC?jf:N^VA0
+!i10b 1
+Aarch
+R2
+R3
+R4
+DEx4 work 14 seletor_de_msg 0 22 7=X1mi9`PZ0136IHHkJ880
+l14
+L13
+VMFfLG2?>ZQQ`NBYbmZ:dH0
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 8FzX[B5dEUoi2@d=Z=CVY2
+!i10b 1
+Etb_seletor_de_msg
+Z14 w1670742478
+R2
+R3
+R4
+R5
+Z15 8D:/2022-2/Laboratorio SD/Trabalho final/LCD/seletor_de_msg/tb_seletor_de_msg.vhd
+Z16 FD:/2022-2/Laboratorio SD/Trabalho final/LCD/seletor_de_msg/tb_seletor_de_msg.vhd
+l0
+L5
+VAU1X^4:Q[DK3L>WNY5nDW1
+!s100 iczSLQQg:M^LW?;0?QPfk0
+R8
+31
+!i10b 1
+Z17 !s108 1670742697.512000
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/LCD/seletor_de_msg/tb_seletor_de_msg.vhd|
+Z19 !s107 D:/2022-2/Laboratorio SD/Trabalho final/LCD/seletor_de_msg/tb_seletor_de_msg.vhd|
+R12
+R13
+Atb
+R2
+R3
+R4
+DEx4 work 17 tb_seletor_de_msg 0 22 AU1X^4:Q[DK3L>WNY5nDW1
+l19
+L9
+Vhflj0C3o=Zzd:U=766L;n1
+!s100 ;o]8_HI1iAeFLU]4b8?4H2
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13

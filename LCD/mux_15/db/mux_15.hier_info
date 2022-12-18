@@ -1,0 +1,24 @@
+|mux_15
+mux_inputs[0] => Mux0.IN15
+mux_inputs[1] => Mux0.IN14
+mux_inputs[2] => Mux0.IN13
+mux_inputs[3] => Mux0.IN12
+mux_inputs[4] => Mux0.IN11
+mux_inputs[5] => Mux0.IN10
+mux_inputs[6] => Mux0.IN9
+mux_inputs[7] => Mux0.IN8
+mux_inputs[8] => Mux0.IN7
+mux_inputs[9] => Mux0.IN6
+mux_inputs[10] => Mux0.IN5
+mux_inputs[11] => Mux0.IN4
+mux_inputs[12] => Mux0.IN3
+mux_inputs[13] => Mux0.IN2
+mux_inputs[14] => Mux0.IN1
+mux_inputs[15] => Mux0.IN0
+mux_control[0] => Mux0.IN19
+mux_control[1] => Mux0.IN18
+mux_control[2] => Mux0.IN17
+mux_control[3] => Mux0.IN16
+mux_output <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

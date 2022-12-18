@@ -1,0 +1,27 @@
+|seletor_de_msg
+msg_num[0] => Equal0.IN1
+msg_num[0] => Equal4.IN1
+msg_num[0] => Equal6.IN0
+msg_num[0] => Equal7.IN1
+msg_num[1] => Equal0.IN0
+msg_num[1] => Equal4.IN0
+msg_num[1] => Equal6.IN1
+msg_num[1] => Equal7.IN0
+msg_char_pos[0] => Equal1.IN1
+msg_char_pos[0] => Equal2.IN0
+msg_char_pos[0] => Equal3.IN1
+msg_char_pos[0] => Equal5.IN1
+msg_char_pos[1] => Equal1.IN0
+msg_char_pos[1] => Equal2.IN1
+msg_char_pos[1] => Equal3.IN0
+msg_char_pos[1] => Equal5.IN0
+msg_char[0] <= msg_char.DB_MAX_OUTPUT_PORT_TYPE
+msg_char[1] <= msg_char.DB_MAX_OUTPUT_PORT_TYPE
+msg_char[2] <= msg_char.DB_MAX_OUTPUT_PORT_TYPE
+msg_char[3] <= <GND>
+msg_char[4] <= msg_char.DB_MAX_OUTPUT_PORT_TYPE
+msg_char[5] <= msg_char.DB_MAX_OUTPUT_PORT_TYPE
+msg_char[6] <= msg_char.DB_MAX_OUTPUT_PORT_TYPE
+msg_char[7] <= <GND>
+
+

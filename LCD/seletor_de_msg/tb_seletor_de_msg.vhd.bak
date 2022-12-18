@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity tb_seletor_de_msg is
+
+end tb_seletor_de_msg;
+
+architecture tb of tb_seletor_de_msg is
+	component seletor_de_msg is
+		port(
+			msg_num : in std_logic_vector(1 downto 0);
+			msg_char_pos : in std_logic_vector(1 downto 0);
+			msg_char : out std_logic_vector(7 downto 0)
+		);
+	end component;
+	signal num, char_pos : std_logic_vector(1 downto 0) := "00";
+	signal char :  std_logic_vector(7 downto 0);
+	begin
+		num <= "00","01" after 20 ns,"10" after 40 ns,"11" after 60 ns;
+		
+		char_pos <= "00","01" after 5 ns,"10" after 10 ns,"11" after 15 ns,
+						"00" after 20 ns,"01" after 25 ns,"10" after 30 ns,"11" after 35 ns,
+						"00" after 40 ns,"01" after 45 ns,"10" after 50 ns,"11" after 55 ns,
+						"00" after 60 ns,"01" after 65 ns,"10" after 70 ns,"11" after 75 ns
+end tb;

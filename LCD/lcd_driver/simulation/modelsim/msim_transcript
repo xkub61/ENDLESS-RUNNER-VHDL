@@ -1,0 +1,132 @@
+# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do lcd_driver_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/reg_1bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg_1bit
+# -- Compiling architecture RTL of reg_1bit
+# vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/mux_15.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux_15
+# -- Compiling architecture arch of mux_15
+# vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/mux_2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux_2
+# -- Compiling architecture arch of mux_2
+# vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/lcd_driver_dp.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity lcd_driver_dp
+# -- Compiling architecture estrutural of lcd_driver_dp
+# vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/Contador_2_bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Contador_2_bits
+# -- Compiling architecture arch of Contador_2_bits
+# vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/cont_10.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity cont_10
+# -- Compiling architecture arch of cont_10
+# vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/cont_4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity cont_4
+# -- Compiling architecture arch of cont_4
+# vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/comp_10.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity comp_10
+# -- Compiling architecture arch of comp_10
+# vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/lcd_driver_fsm.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity lcd_driver_fsm
+# -- Compiling architecture fsm of lcd_driver_fsm
+# vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/lcd_driver.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity lcd_driver
+# -- Compiling architecture arch of lcd_driver
+# 
+# vcom -93 -work work {D:/2022-2/Laboratorio SD/Trabalho final/LCD/lcd_driver/tb_lcd_driver.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_lcd_driver
+# -- Compiling architecture tb of tb_lcd_driver
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_lcd_driver
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_lcd_driver 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_lcd_driver(tb)
+# Loading work.lcd_driver(arch)
+# Loading work.lcd_driver_fsm(fsm)
+# Loading work.lcd_driver_dp(estrutural)
+# Loading work.mux_15(arch)
+# Loading work.mux_2(arch)
+# Loading work.cont_4(arch)
+# Loading work.contador_2_bits(arch)
+# Loading work.reg_1bit(rtl)
+# Loading work.cont_10(arch)
+# Loading work.comp_10(arch)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 200 ms
+add wave -position end  sim:/tb_lcd_driver/instance_lcd_driver/controladora/fsm_linha
+add wave -position end  sim:/tb_lcd_driver/instance_lcd_driver/datapath/s_pos
+add wave -position end  sim:/tb_lcd_driver/instance_lcd_driver/datapath/s_obj
+add wave -position end  sim:/tb_lcd_driver/instance_lcd_driver/controladora/atual_estado
+add wave -position end  sim:/tb_lcd_driver/instance_lcd_driver/controladora/prox_estado
+restart -f
+run

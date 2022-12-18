@@ -1,0 +1,7 @@
+|div_freq
+div_CLK => cnt[0].CLK
+div_CLK => cnt[1].CLK
+div_RESET => cnt[0].IN1
+div_Q <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+
+

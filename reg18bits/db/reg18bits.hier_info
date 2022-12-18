@@ -1,6 +1,7 @@
 |reg18bits
 reg18_IN => tmp[0].DATAIN
 reg18_E => tmp[0].ENA
+reg18_E => tmp[17].ENA
 reg18_E => tmp[1].ENA
 reg18_E => tmp[2].ENA
 reg18_E => tmp[3].ENA
@@ -17,7 +18,7 @@ reg18_E => tmp[13].ENA
 reg18_E => tmp[14].ENA
 reg18_E => tmp[15].ENA
 reg18_E => tmp[16].ENA
-reg18_E => tmp[17].ENA
+reg18_CLK => tmp[17].CLK
 reg18_CLK => tmp[0].CLK
 reg18_CLK => tmp[1].CLK
 reg18_CLK => tmp[2].CLK
@@ -35,7 +36,6 @@ reg18_CLK => tmp[13].CLK
 reg18_CLK => tmp[14].CLK
 reg18_CLK => tmp[15].CLK
 reg18_CLK => tmp[16].CLK
-reg18_CLK => tmp[17].CLK
 reg18_Q[0] <= tmp[0].DB_MAX_OUTPUT_PORT_TYPE
 reg18_Q[1] <= tmp[1].DB_MAX_OUTPUT_PORT_TYPE
 reg18_Q[2] <= tmp[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -54,5 +54,6 @@ reg18_Q[14] <= tmp[14].DB_MAX_OUTPUT_PORT_TYPE
 reg18_Q[15] <= tmp[15].DB_MAX_OUTPUT_PORT_TYPE
 reg18_Q[16] <= tmp[16].DB_MAX_OUTPUT_PORT_TYPE
 reg18_Q[17] <= tmp[17].DB_MAX_OUTPUT_PORT_TYPE
+reg18_RMV => tmp[17].ACLR
 
 

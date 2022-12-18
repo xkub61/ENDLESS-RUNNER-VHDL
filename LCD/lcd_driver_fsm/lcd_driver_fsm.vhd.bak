@@ -1,0 +1,324 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity lcd_driver_fsm is
+	port(
+		fsm_clk : in std_logic;
+		fsm_q0_pos : in std_logic;
+		fsm_q1_pos : in std_logic;
+		fsm_pos : in std_logic_vector(3 downto 0);
+		fsm_linha : in std_logic;
+		fsm_timer : in std_logic_vector(9 downto 0);
+		fsm_obj : in std_logic_vector(1 downto 0);
+		fsm_render : in std_logic;
+		fsm_clr_pos : out std_logic;
+		fsm_en_pos : out std_logic;
+		fsm_clr_linha : out std_logic;
+		fsm_set_linha : out std_logic;
+		fsm_clr_timer : out std_logic;
+		fsm_en_timer : out std_logic;
+		fsm_clr_obj : out std_logic;
+		fsm_en_obj : out std_logic;
+		fsm_en_E : out std_logic;
+		fsm_finish : out std_logic;
+		fsm_dt : out std_logic_vector(2 downto 0)		
+	);
+end lcd_driver_fsm;
+
+architecture fsm of lcd_driver_fsm is
+
+	type estado is (	s0,s1,s2,s3,s4,s5,s6,s7,s8,s9,
+							s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,
+							s20,s21,s22,s23,s24,s25,s26,s27,s28,s29,
+							s30,s31,s32,s33,s34,s35,s36,s37,s38,s39,
+							s40,s41,s42,s43,s44,s45,s46,s47,s48,s49,
+							s50,s51,s52,s53,s54,s55,s56,s57,s58,s59,
+							s60,s61,s62,s63);
+	signal atual_estado, prox_estado: estado := s0;
+
+
+begin
+	sequencial : 
+	process(fsm_clk) is
+	begin
+		if rising_edge(fsm_clk) then
+			prox_estado <= atual_estado;
+	end process;
+	
+	logico :
+		process( fsm_q0_pos,fsm_q1_pos) is
+		begin
+			case atual_estado is
+				when s0 => --CLEAR
+					fsm_clr_pos <= '0';
+					fsm_en_pos <= '0';
+					fsm_clr_linha <= '0';
+					fsm_set_linha <= '0';
+					fsm_clr_timer <= '0';
+					fsm_en_timer <= '1';
+					fsm_clr_obj <= '1';
+					fsm_en_obj <= '0';
+					fsm_en_E <= '0';
+					fsm_finish <= '0';
+					fsm_dt <= '00000000';
+					
+					prox_estado <= s1;
+					
+				when s1 => --TIMER++
+					fsm_clr_pos <= '0';
+					fsm_en_pos <= '0';
+					fsm_clr_linha <= '0';
+					fsm_set_linha <= '0';
+					fsm_clr_timer <= '0';
+					fsm_en_timer <= '1';
+					fsm_clr_obj <= '0';
+					fsm_en_obj <= '0';
+					fsm_en_E <= '0';
+					fsm_finish <= '0';
+					fsm_dt <= '00000000';
+					
+					if fsm_timer = "1111101000" then
+						prox_estado <= s2;
+					else
+						prox_estado <= s1;
+					end if;
+					
+				when s2 => --DISPLAY INIT 1
+					fsm_clr_pos <= '0';
+					fsm_en_pos <= '0';
+					fsm_clr_linha <= '0';
+					fsm_set_linha <= '0';
+					fsm_clr_timer <= '0';
+					fsm_en_timer <= '0';
+					fsm_clr_obj <= '0';
+					fsm_en_obj <= '0';
+					fsm_en_E <= '1';
+					fsm_finish <= '0';
+					fsm_dt <= '00110000';
+					
+					prox_estado <= s3;
+				
+				when s3 => --TIMER ++
+					fsm_clr_pos <= '0';
+					fsm_en_pos <= '0';
+					fsm_clr_linha <= '0';
+					fsm_set_linha <= '0';
+					fsm_clr_timer <= '0';
+					fsm_en_timer <= '1';
+					fsm_clr_obj <= '0';
+					fsm_en_obj <= '0';
+					fsm_en_E <= '0';
+					fsm_finish <= '0';
+					fsm_dt <= '00000000';
+					
+					if fsm_timer = "0000110010" then
+						prox_estado <= s4;
+					else
+						prox_estado <= s3;
+					end if;
+				
+				when s4 => --DISPLAY INIT 2
+					fsm_clr_pos <= '0';
+					fsm_en_pos <= '0';
+					fsm_clr_linha <= '0';
+					fsm_set_linha <= '0';
+					fsm_clr_timer <= '0';
+					fsm_en_timer <= '0';
+					fsm_clr_obj <= '0';
+					fsm_en_obj <= '0';
+					fsm_en_E <= '1';
+					fsm_finish <= '0';
+					fsm_dt <= '00110000';
+					
+					prox_estado <= s5;
+					
+				when s5 => --DISPLAY INIT 3
+					
+					fsm_clr_pos <= '0';
+					fsm_en_pos <= '0';
+					fsm_clr_linha <= '0';
+					fsm_set_linha <= '0';
+					fsm_clr_timer <= '0';
+					fsm_en_timer <= '0';
+					fsm_clr_obj <= '0';
+					fsm_en_obj <= '0';
+					fsm_en_E <= '1';
+					fsm_finish <= '0';
+					fsm_dt <= '00110000';
+					
+					prox_estado <= s6;
+				
+				when s6 => --FUNCTION SET
+					
+					fsm_clr_pos <= '0';
+					fsm_en_pos <= '0';
+					fsm_clr_linha <= '0';
+					fsm_set_linha <= '0';
+					fsm_clr_timer <= '0';
+					fsm_en_timer <= '0';
+					fsm_clr_obj <= '0';
+					fsm_en_obj <= '0';
+					fsm_en_E <= '1';
+					fsm_finish <= '0';
+					fsm_dt <= '00111000';
+					
+					prox_estado <= s7;
+				
+				when s7 => --DISPLAY ON
+					
+					fsm_clr_pos <= '0';
+					fsm_en_pos <= '0';
+					fsm_clr_linha <= '0';
+					fsm_set_linha <= '0';
+					fsm_clr_timer <= '0';
+					fsm_en_timer <= '0';
+					fsm_clr_obj <= '0';
+					fsm_en_obj <= '0';
+					fsm_en_E <= '1';
+					fsm_finish <= '0';
+					fsm_dt <= '00001000';
+					
+					prox_estado <= s8;
+				
+				when s8 => --CLEAR DISPLAY, ZERA TIMER
+				
+					fsm_clr_pos <= '0';
+					fsm_en_pos <= '0';
+					fsm_clr_linha <= '0';
+					fsm_set_linha <= '0';
+					fsm_clr_timer <= '1';
+					fsm_en_timer <= '0';
+					fsm_clr_obj <= '0';
+					fsm_en_obj <= '0';
+					fsm_en_E <= '1';
+					fsm_finish <= '0';
+					fsm_dt <= '00000001';
+					
+					prox_estado <= s9;
+				
+				when s9 => --TIMER ++
+					fsm_clr_pos <= '0';
+					fsm_en_pos <= '0';
+					fsm_clr_linha <= '0';
+					fsm_set_linha <= '0';
+					fsm_clr_timer <= '0';
+					fsm_en_timer <= '1';
+					fsm_clr_obj <= '0';
+					fsm_en_obj <= '0';
+					fsm_en_E <= '0';
+					fsm_finish <= '0';
+					fsm_dt <= '00000000';
+					
+					if fsm_timer = "0000101000" then
+						prox_estado <= s10;
+					else
+						prox_estado <= s9;
+					end if;
+					
+				when s10 => --ENTRY MODE SET
+				
+					fsm_clr_pos <= '0';
+					fsm_en_pos <= '0';
+					fsm_clr_linha <= '0';
+					fsm_set_linha <= '0';
+					fsm_clr_timer <= '0';
+					fsm_en_timer <= '0';
+					fsm_clr_obj <= '0';
+					fsm_en_obj <= '0';
+					fsm_en_E <= '1';
+					fsm_finish <= '0';
+					fsm_dt <= '00000110';
+					
+					prox_estado <= s11;
+					
+				when s11 => --FIM DA INICIALIZAÇÃO/FIM DO RENDER
+				
+					fsm_clr_pos <= '1';
+					fsm_en_pos <= '0';
+					fsm_clr_linha <= '1';
+					fsm_set_linha <= '0';
+					fsm_clr_timer <= '1';
+					fsm_en_timer <= '';
+					fsm_clr_obj <= '1';
+					fsm_en_obj <= '0';
+					fsm_en_E <= '0';
+					fsm_finish <= '1';
+					fsm_dt <= '00000000';
+					
+					if fsm_render = '1' then
+						prox_estado <= s12;
+					else
+						prox_estado <= s11;
+					end if;
+				
+				when s12 => --CLEAR DISPLAY
+				
+					fsm_clr_pos <= '0';
+					fsm_en_pos <= '0';
+					fsm_clr_linha <= '0';
+					fsm_set_linha <= '0';
+					fsm_clr_timer <= '0';
+					fsm_en_timer <= '0';
+					fsm_clr_obj <= '0';
+					fsm_en_obj <= '0';
+					fsm_en_E <= '1';
+					fsm_finish <= '0';
+					fsm_dt <= '00000001';
+					
+					prox_estado <= s13;
+				
+				when s13 => --TIMER ++
+					fsm_clr_pos <= '0';
+					fsm_en_pos <= '0';
+					fsm_clr_linha <= '0';
+					fsm_set_linha <= '0';
+					fsm_clr_timer <= '0';
+					fsm_en_timer <= '1';
+					fsm_clr_obj <= '0';
+					fsm_en_obj <= '0';
+					fsm_en_E <= '0';
+					fsm_finish <= '0';
+					fsm_dt <= '00000000';
+					--TESTA SE JÁ SE PASSARAM 4 ms
+					if fsm_timer = "0000101000" then
+						prox_estado <= s14;
+					else
+						prox_estado <= s13;
+					end if;
+				
+				when s14 => --ZERA TODOS OS REGS
+				
+					fsm_clr_pos <= '1';
+					fsm_en_pos <= '0';
+					fsm_clr_linha <= '1';
+					fsm_set_linha <= '0';
+					fsm_clr_timer <= '1';
+					fsm_en_timer <= '0';
+					fsm_clr_obj <= '1';
+					fsm_en_obj <= '0';
+					fsm_en_E <= '0';
+					fsm_finish <= '0';
+					fsm_dt <= '00000001';
+					
+					prox_estado <= s15;
+				
+				when s15 => --ESCOLHE SE VAI RENDERIZAR JOGO OU MENSAGEM
+					fsm_clr_pos <= '0';
+					fsm_en_pos <= '0';
+					fsm_clr_linha <= '0';
+					fsm_set_linha <= '0';
+					fsm_clr_timer <= '0';
+					fsm_en_timer <= '0';
+					fsm_clr_obj <= '0';
+					fsm_en_obj <= '0';
+					fsm_en_E <= '0';
+					fsm_finish <= '0';
+					fsm_dt <= '00000000';
+					
+					if fsm_timer = "0000101000" then
+						prox_estado <= s14;
+					else
+						prox_estado <= s13;
+					end if;
+end fsm;

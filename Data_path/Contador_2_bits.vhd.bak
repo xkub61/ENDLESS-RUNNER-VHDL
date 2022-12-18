@@ -1,0 +1,33 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Contador_2_bits is
+	port(
+			cnt_EN : in std_logic;
+			cnt_CLK : in std_logic;
+			cnt_RESET : in std_logic;
+			cnt_Q : out std_logic_vector(1 downto 0)
+			
+			);
+end Contador_2_bits;
+
+architecture arch of Contador_2_bits is	
+	begin
+
+	process (cnt_CLK, cnt_RESET , cnt_EN) is
+		variable   cnt  : unsigned(1 downto 0);
+		begin
+			if (cnt_RESET = '1') then
+				cnt := to_unsigned(0,2);
+			elsif (rising_edge(cnt_CLK) and cnt_EN = '1') then
+				cnt := cnt + to_unsigned(1,2);
+			end if;
+			
+			cnt_Q <= std_logic_vector(cnt);
+			
+			
+	end process;
+	
+end arch;
+

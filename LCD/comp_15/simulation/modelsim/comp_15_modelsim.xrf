@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, D:/2022-2/Laboratorio SD/Trabalho final/LCD/comp_15/comp_15.vhd
+source_file = 1, D:/2022-2/Laboratorio SD/Trabalho final/LCD/comp_15/db/comp_15.cbx.xml
+source_file = 1, d:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, d:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, d:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, d:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = comp_15
+instance = comp, \cmp_a[3]~I\, cmp_a[3], comp_15, 1
+instance = comp, \cmp_a[1]~I\, cmp_a[1], comp_15, 1
+instance = comp, \cmp_a[2]~I\, cmp_a[2], comp_15, 1
+instance = comp, \LessThan0~0\, LessThan0~0, comp_15, 1
+instance = comp, \cmp_s~I\, cmp_s, comp_15, 1
+instance = comp, \cmp_a[0]~I\, cmp_a[0], comp_15, 1

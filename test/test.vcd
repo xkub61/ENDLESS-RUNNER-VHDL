@@ -1,0 +1,31 @@
+$date
+  Sun Dec 18 15:54:50 2022
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module tb_sep_dez_un $end
+$var reg 7 ! s_num[6:0] $end
+$var reg 4 " s_dez[3:0] $end
+$var reg 4 # s_uni[3:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+b0101101 !
+bUUUU "
+bUUUU #
+#10000000
+b1100000 !
+#15000000
+b1010000 !
+#20000000
+b0010000 !

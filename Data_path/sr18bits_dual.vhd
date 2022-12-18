@@ -1,0 +1,44 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity sr18bits_dual is
+	port(
+		sr_IN0 : in std_logic;
+		sr_IN1 : in std_logic;
+		sr_CLK : in std_logic;
+		sr_RMV : in std_logic;
+		sr_CLR : in std_logic;
+		sr_Q0 : out std_logic_vector(16 downto 0);
+		sr_Q1 : out std_logic_vector(16 downto 0)
+		);	
+end sr18bits_dual;
+
+architecture arch of sr18bits_dual is
+
+component reg18bits is 
+	port(
+			reg18_IN : in std_logic;
+			reg18_E : in std_logic;
+			reg18_CLK : in std_logic;
+			reg18_CLR : in std_logic;
+			reg18_Q : out std_logic_vector(16 downto 0);
+			reg18_RMV : in std_logic
+		);
+end component;
+signal IN0,IN1,CLK,E : std_logic;
+signal Q0, Q1 : std_logic_vector(16 downto 0);
+
+begin
+	instancia0_reg : reg18bits port map(reg18_IN => IN0, reg18_E => E, reg18_RMV =>sr_RMV, reg18_CLK => CLK, reg18_CLR => sr_CLR, reg18_Q => Q0);
+	instancia1_reg : reg18bits port map(reg18_IN => IN1, reg18_E => E, reg18_RMV =>sr_RMV, reg18_CLK => CLK, reg18_CLR => sr_CLR, reg18_Q => Q1);
+	
+	IN0 <= sr_IN0;
+	IN1 <= sr_IN1;
+	CLK <= sr_CLK;
+	E <= '1';
+	sr_Q0 <= Q0;
+	sr_Q1 <= Q1;
+	
+
+end arch;

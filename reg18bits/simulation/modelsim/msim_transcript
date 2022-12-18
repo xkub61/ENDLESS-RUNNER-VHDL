@@ -27,6 +27,7 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity tb_reg18bits
 # -- Compiling architecture tb of tb_reg18bits
+# ** Warning: [4] D:/2022-2/Laboratorio SD/Trabalho final/reg18bits/tb_reg18bits.vhd(33): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_reg18bits
 # vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_reg18bits 
@@ -42,4 +43,4 @@
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-# run 30 ns
+# run 40 ns

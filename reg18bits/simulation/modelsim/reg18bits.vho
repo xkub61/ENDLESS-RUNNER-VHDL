@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
--- DATE "11/30/2022 22:57:09"
+-- DATE "12/11/2022 23:23:23"
 
 -- 
 -- Device: Altera EP2C35F672C6 Package FBGA672
@@ -36,32 +36,34 @@ ENTITY 	reg18bits IS
 	reg18_IN : IN std_logic;
 	reg18_E : IN std_logic;
 	reg18_CLK : IN std_logic;
-	reg18_Q : OUT std_logic_vector(17 DOWNTO 0)
+	reg18_Q : OUT std_logic_vector(17 DOWNTO 0);
+	reg18_RMV : IN std_logic
 	);
 END reg18bits;
 
 -- Design Ports Information
--- reg18_Q[0]	=>  Location: PIN_B16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- reg18_Q[1]	=>  Location: PIN_G13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- reg18_Q[2]	=>  Location: PIN_C16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- reg18_Q[3]	=>  Location: PIN_D15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- reg18_Q[4]	=>  Location: PIN_E15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- reg18_Q[5]	=>  Location: PIN_F13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- reg18_Q[6]	=>  Location: PIN_F14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- reg18_Q[7]	=>  Location: PIN_G14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- reg18_Q[8]	=>  Location: PIN_D16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- reg18_Q[9]	=>  Location: PIN_C15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- reg18_Q[10]	=>  Location: PIN_B15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- reg18_Q[11]	=>  Location: PIN_B14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- reg18_Q[12]	=>  Location: PIN_D14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- reg18_Q[13]	=>  Location: PIN_A14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- reg18_Q[14]	=>  Location: PIN_C12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- reg18_Q[15]	=>  Location: PIN_B12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- reg18_Q[16]	=>  Location: PIN_B11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- reg18_Q[0]	=>  Location: PIN_F14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- reg18_Q[1]	=>  Location: PIN_F13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- reg18_Q[2]	=>  Location: PIN_G14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- reg18_Q[3]	=>  Location: PIN_B15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- reg18_Q[4]	=>  Location: PIN_A14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- reg18_Q[5]	=>  Location: PIN_C16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- reg18_Q[6]	=>  Location: PIN_D16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- reg18_Q[7]	=>  Location: PIN_C15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- reg18_Q[8]	=>  Location: PIN_B16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- reg18_Q[9]	=>  Location: PIN_G13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- reg18_Q[10]	=>  Location: PIN_J11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- reg18_Q[11]	=>  Location: PIN_B12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- reg18_Q[12]	=>  Location: PIN_B14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- reg18_Q[13]	=>  Location: PIN_G12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- reg18_Q[14]	=>  Location: PIN_F12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- reg18_Q[15]	=>  Location: PIN_B11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- reg18_Q[16]	=>  Location: PIN_C12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 -- reg18_Q[17]	=>  Location: PIN_C11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 -- reg18_IN	=>  Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 -- reg18_CLK	=>  Location: PIN_P2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 -- reg18_E	=>  Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- reg18_RMV	=>  Location: PIN_D14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
 
 ARCHITECTURE structure OF reg18bits IS
@@ -78,6 +80,7 @@ SIGNAL ww_reg18_IN : std_logic;
 SIGNAL ww_reg18_E : std_logic;
 SIGNAL ww_reg18_CLK : std_logic;
 SIGNAL ww_reg18_Q : std_logic_vector(17 DOWNTO 0);
+SIGNAL ww_reg18_RMV : std_logic;
 SIGNAL \reg18_CLK~clkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \reg18_CLK~combout\ : std_logic;
 SIGNAL \reg18_CLK~clkctrl_outclk\ : std_logic;
@@ -98,6 +101,7 @@ SIGNAL \tmp[14]~feeder_combout\ : std_logic;
 SIGNAL \tmp[15]~feeder_combout\ : std_logic;
 SIGNAL \tmp[16]~feeder_combout\ : std_logic;
 SIGNAL \tmp[17]~feeder_combout\ : std_logic;
+SIGNAL \reg18_RMV~combout\ : std_logic;
 SIGNAL tmp : std_logic_vector(17 DOWNTO 0);
 
 BEGIN
@@ -106,6 +110,7 @@ ww_reg18_IN <= reg18_IN;
 ww_reg18_E <= reg18_E;
 ww_reg18_CLK <= reg18_CLK;
 reg18_Q <= ww_reg18_Q;
+ww_reg18_RMV <= reg18_RMV;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
@@ -177,7 +182,7 @@ PORT MAP (
 	padio => ww_reg18_IN,
 	combout => \reg18_IN~combout\);
 
--- Location: LCCOMB_X35_Y35_N0
+-- Location: LCCOMB_X34_Y35_N0
 \tmp[0]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \tmp[0]~feeder_combout\ = \reg18_IN~combout\
@@ -217,7 +222,7 @@ PORT MAP (
 	padio => ww_reg18_E,
 	combout => \reg18_E~combout\);
 
--- Location: LCFF_X35_Y35_N1
+-- Location: LCFF_X34_Y35_N1
 \tmp[0]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \reg18_CLK~clkctrl_outclk\,
@@ -227,7 +232,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => tmp(0));
 
--- Location: LCCOMB_X35_Y35_N2
+-- Location: LCCOMB_X34_Y35_N10
 \tmp[1]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \tmp[1]~feeder_combout\ = tmp(0)
@@ -241,7 +246,7 @@ PORT MAP (
 	datad => tmp(0),
 	combout => \tmp[1]~feeder_combout\);
 
--- Location: LCFF_X35_Y35_N3
+-- Location: LCFF_X34_Y35_N11
 \tmp[1]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \reg18_CLK~clkctrl_outclk\,
@@ -251,7 +256,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => tmp(1));
 
--- Location: LCCOMB_X35_Y35_N12
+-- Location: LCCOMB_X34_Y35_N12
 \tmp[2]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \tmp[2]~feeder_combout\ = tmp(1)
@@ -265,7 +270,7 @@ PORT MAP (
 	datad => tmp(1),
 	combout => \tmp[2]~feeder_combout\);
 
--- Location: LCFF_X35_Y35_N13
+-- Location: LCFF_X34_Y35_N13
 \tmp[2]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \reg18_CLK~clkctrl_outclk\,
@@ -275,7 +280,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => tmp(2));
 
--- Location: LCCOMB_X35_Y35_N6
+-- Location: LCCOMB_X34_Y35_N22
 \tmp[3]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \tmp[3]~feeder_combout\ = tmp(2)
@@ -289,7 +294,7 @@ PORT MAP (
 	datad => tmp(2),
 	combout => \tmp[3]~feeder_combout\);
 
--- Location: LCFF_X35_Y35_N7
+-- Location: LCFF_X34_Y35_N23
 \tmp[3]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \reg18_CLK~clkctrl_outclk\,
@@ -299,7 +304,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => tmp(3));
 
--- Location: LCCOMB_X35_Y35_N20
+-- Location: LCCOMB_X34_Y35_N16
 \tmp[4]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \tmp[4]~feeder_combout\ = tmp(3)
@@ -313,7 +318,7 @@ PORT MAP (
 	datad => tmp(3),
 	combout => \tmp[4]~feeder_combout\);
 
--- Location: LCFF_X35_Y35_N21
+-- Location: LCFF_X34_Y35_N17
 \tmp[4]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \reg18_CLK~clkctrl_outclk\,
@@ -323,7 +328,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => tmp(4));
 
--- Location: LCFF_X35_Y35_N27
+-- Location: LCFF_X34_Y35_N27
 \tmp[5]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \reg18_CLK~clkctrl_outclk\,
@@ -334,7 +339,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => tmp(5));
 
--- Location: LCCOMB_X35_Y35_N24
+-- Location: LCCOMB_X34_Y35_N20
 \tmp[6]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \tmp[6]~feeder_combout\ = tmp(5)
@@ -348,7 +353,7 @@ PORT MAP (
 	datad => tmp(5),
 	combout => \tmp[6]~feeder_combout\);
 
--- Location: LCFF_X35_Y35_N25
+-- Location: LCFF_X34_Y35_N21
 \tmp[6]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \reg18_CLK~clkctrl_outclk\,
@@ -358,7 +363,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => tmp(6));
 
--- Location: LCFF_X35_Y35_N19
+-- Location: LCFF_X34_Y35_N3
 \tmp[7]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \reg18_CLK~clkctrl_outclk\,
@@ -369,7 +374,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => tmp(7));
 
--- Location: LCCOMB_X35_Y35_N28
+-- Location: LCCOMB_X34_Y35_N28
 \tmp[8]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \tmp[8]~feeder_combout\ = tmp(7)
@@ -383,7 +388,7 @@ PORT MAP (
 	datad => tmp(7),
 	combout => \tmp[8]~feeder_combout\);
 
--- Location: LCFF_X35_Y35_N29
+-- Location: LCFF_X34_Y35_N29
 \tmp[8]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \reg18_CLK~clkctrl_outclk\,
@@ -393,7 +398,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => tmp(8));
 
--- Location: LCCOMB_X35_Y35_N30
+-- Location: LCCOMB_X34_Y35_N30
 \tmp[9]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \tmp[9]~feeder_combout\ = tmp(8)
@@ -407,7 +412,7 @@ PORT MAP (
 	datad => tmp(8),
 	combout => \tmp[9]~feeder_combout\);
 
--- Location: LCFF_X35_Y35_N31
+-- Location: LCFF_X34_Y35_N31
 \tmp[9]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \reg18_CLK~clkctrl_outclk\,
@@ -417,7 +422,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => tmp(9));
 
--- Location: LCCOMB_X34_Y35_N0
+-- Location: LCCOMB_X33_Y35_N28
 \tmp[10]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \tmp[10]~feeder_combout\ = tmp(9)
@@ -431,7 +436,7 @@ PORT MAP (
 	datad => tmp(9),
 	combout => \tmp[10]~feeder_combout\);
 
--- Location: LCFF_X34_Y35_N1
+-- Location: LCFF_X33_Y35_N29
 \tmp[10]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \reg18_CLK~clkctrl_outclk\,
@@ -441,7 +446,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => tmp(10));
 
--- Location: LCCOMB_X34_Y35_N26
+-- Location: LCCOMB_X33_Y35_N26
 \tmp[11]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \tmp[11]~feeder_combout\ = tmp(10)
@@ -455,7 +460,7 @@ PORT MAP (
 	datad => tmp(10),
 	combout => \tmp[11]~feeder_combout\);
 
--- Location: LCFF_X34_Y35_N27
+-- Location: LCFF_X33_Y35_N27
 \tmp[11]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \reg18_CLK~clkctrl_outclk\,
@@ -465,7 +470,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => tmp(11));
 
--- Location: LCCOMB_X34_Y35_N24
+-- Location: LCCOMB_X33_Y35_N20
 \tmp[12]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \tmp[12]~feeder_combout\ = tmp(11)
@@ -479,7 +484,7 @@ PORT MAP (
 	datad => tmp(11),
 	combout => \tmp[12]~feeder_combout\);
 
--- Location: LCFF_X34_Y35_N25
+-- Location: LCFF_X33_Y35_N21
 \tmp[12]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \reg18_CLK~clkctrl_outclk\,
@@ -489,7 +494,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => tmp(12));
 
--- Location: LCFF_X34_Y35_N3
+-- Location: LCFF_X33_Y35_N11
 \tmp[13]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \reg18_CLK~clkctrl_outclk\,
@@ -500,7 +505,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => tmp(13));
 
--- Location: LCCOMB_X34_Y35_N28
+-- Location: LCCOMB_X33_Y35_N0
 \tmp[14]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \tmp[14]~feeder_combout\ = tmp(13)
@@ -514,7 +519,7 @@ PORT MAP (
 	datad => tmp(13),
 	combout => \tmp[14]~feeder_combout\);
 
--- Location: LCFF_X34_Y35_N29
+-- Location: LCFF_X33_Y35_N1
 \tmp[14]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \reg18_CLK~clkctrl_outclk\,
@@ -524,7 +529,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => tmp(14));
 
--- Location: LCCOMB_X34_Y35_N18
+-- Location: LCCOMB_X33_Y35_N2
 \tmp[15]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \tmp[15]~feeder_combout\ = tmp(14)
@@ -538,7 +543,7 @@ PORT MAP (
 	datad => tmp(14),
 	combout => \tmp[15]~feeder_combout\);
 
--- Location: LCFF_X34_Y35_N19
+-- Location: LCFF_X33_Y35_N3
 \tmp[15]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \reg18_CLK~clkctrl_outclk\,
@@ -548,7 +553,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => tmp(15));
 
--- Location: LCCOMB_X34_Y35_N12
+-- Location: LCCOMB_X33_Y35_N12
 \tmp[16]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \tmp[16]~feeder_combout\ = tmp(15)
@@ -562,7 +567,7 @@ PORT MAP (
 	datad => tmp(15),
 	combout => \tmp[16]~feeder_combout\);
 
--- Location: LCFF_X34_Y35_N13
+-- Location: LCFF_X33_Y35_N13
 \tmp[16]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \reg18_CLK~clkctrl_outclk\,
@@ -572,7 +577,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => tmp(16));
 
--- Location: LCCOMB_X34_Y35_N22
+-- Location: LCCOMB_X33_Y35_N22
 \tmp[17]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \tmp[17]~feeder_combout\ = tmp(16)
@@ -586,17 +591,44 @@ PORT MAP (
 	datad => tmp(16),
 	combout => \tmp[17]~feeder_combout\);
 
--- Location: LCFF_X34_Y35_N23
+-- Location: PIN_D14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\reg18_RMV~I\ : cycloneii_io
+-- pragma translate_off
+GENERIC MAP (
+	input_async_reset => "none",
+	input_power_up => "low",
+	input_register_mode => "none",
+	input_sync_reset => "none",
+	oe_async_reset => "none",
+	oe_power_up => "low",
+	oe_register_mode => "none",
+	oe_sync_reset => "none",
+	operation_mode => "input",
+	output_async_reset => "none",
+	output_power_up => "low",
+	output_register_mode => "none",
+	output_sync_reset => "none")
+-- pragma translate_on
+PORT MAP (
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	devoe => ww_devoe,
+	oe => GND,
+	padio => ww_reg18_RMV,
+	combout => \reg18_RMV~combout\);
+
+-- Location: LCFF_X33_Y35_N23
 \tmp[17]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \reg18_CLK~clkctrl_outclk\,
 	datain => \tmp[17]~feeder_combout\,
+	aclr => \reg18_RMV~combout\,
 	ena => \reg18_E~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => tmp(17));
 
--- Location: PIN_B16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_F14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \reg18_Q[0]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -622,7 +654,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_reg18_Q(0));
 
--- Location: PIN_G13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_F13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \reg18_Q[1]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -648,7 +680,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_reg18_Q(1));
 
--- Location: PIN_C16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_G14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \reg18_Q[2]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -674,7 +706,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_reg18_Q(2));
 
--- Location: PIN_D15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_B15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \reg18_Q[3]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -700,7 +732,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_reg18_Q(3));
 
--- Location: PIN_E15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_A14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \reg18_Q[4]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -726,7 +758,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_reg18_Q(4));
 
--- Location: PIN_F13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_C16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \reg18_Q[5]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -752,7 +784,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_reg18_Q(5));
 
--- Location: PIN_F14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_D16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \reg18_Q[6]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -778,7 +810,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_reg18_Q(6));
 
--- Location: PIN_G14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_C15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \reg18_Q[7]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -804,7 +836,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_reg18_Q(7));
 
--- Location: PIN_D16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_B16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \reg18_Q[8]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -830,7 +862,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_reg18_Q(8));
 
--- Location: PIN_C15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_G13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \reg18_Q[9]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -856,7 +888,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_reg18_Q(9));
 
--- Location: PIN_B15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_J11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \reg18_Q[10]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -882,7 +914,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_reg18_Q(10));
 
--- Location: PIN_B14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_B12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \reg18_Q[11]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -908,7 +940,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_reg18_Q(11));
 
--- Location: PIN_D14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_B14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \reg18_Q[12]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -934,7 +966,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_reg18_Q(12));
 
--- Location: PIN_A14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_G12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \reg18_Q[13]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -960,7 +992,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_reg18_Q(13));
 
--- Location: PIN_C12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_F12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \reg18_Q[14]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -986,7 +1018,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_reg18_Q(14));
 
--- Location: PIN_B12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_B11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \reg18_Q[15]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -1012,7 +1044,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_reg18_Q(15));
 
--- Location: PIN_B11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_C12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \reg18_Q[16]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (

@@ -1,0 +1,24 @@
+|comp_10
+comp_A[0] => LessThan0.IN10
+comp_A[1] => LessThan0.IN9
+comp_A[2] => LessThan0.IN8
+comp_A[3] => LessThan0.IN7
+comp_A[4] => LessThan0.IN6
+comp_A[5] => LessThan0.IN5
+comp_A[6] => LessThan0.IN4
+comp_A[7] => LessThan0.IN3
+comp_A[8] => LessThan0.IN2
+comp_A[9] => LessThan0.IN1
+comp_B[0] => LessThan0.IN20
+comp_B[1] => LessThan0.IN19
+comp_B[2] => LessThan0.IN18
+comp_B[3] => LessThan0.IN17
+comp_B[4] => LessThan0.IN16
+comp_B[5] => LessThan0.IN15
+comp_B[6] => LessThan0.IN14
+comp_B[7] => LessThan0.IN13
+comp_B[8] => LessThan0.IN12
+comp_B[9] => LessThan0.IN11
+comp_S <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+

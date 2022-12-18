@@ -1,0 +1,67 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity GAME is
+	port(	game_clock : in std_logic;
+			game_start : in std_logic;
+			game_a_button : in std_logic;
+			game_b_button : in std_logic
+			);
+end GAME;
+
+architecture arch of GAME is
+
+component controladora_jogo is
+	port(
+		--entradas
+		ctrl_CLK : in std_logic;
+		ctrl_FINISH : in std_logic;
+		ctrl_START : in std_logic;
+		ctrl_Q0_MOEDA : in std_logic;
+		ctrl_COLLECTED : in std_logic;
+		ctrl_Q0_OBST : in std_logic;
+		ctrl_ENDED : in std_logic;
+		ctrl_PLAYER : in std_logic;
+		ctrl_FRAME_TIMER : in std_logic;
+		ctrl_RESULT : in std_logic_vector(2 downto 0);
+		
+		--saidas
+		ctrl_LFSR_SHFT : out std_logic;
+		ctrl_CNT_MOEDA1: out std_logic;
+		ctrl_CNT_MOEDA2 : out std_logic;
+		ctrl_RMV_MOEDA : out std_logic;
+		ctrl_RMV_OBST : out std_logic;
+		ctrl_SET_PLAYER : out std_logic;
+		ctrl_CLR_MOEDA1: out std_logic;
+		ctrl_CLR_MOEDA2 : out std_logic;
+		ctrl_CLR_PLAYER : out std_logic;
+		ctrl_CLR_TIMER : out std_logic;
+		ctrl_CLR_START : out std_logic;
+		ctrl_RENDER : out std_logic;
+		ctrl_CMD : out std_logic_vector(2 downto 0)
+		);
+end component;
+
+entity lcd_driver is
+	port(	clk : in std_logic;
+			cmd : in std_logic_vector(2 downto 0);
+			render : in std_logic;
+			q0_moeda : in std_logic_vector(15 downto 0);
+			q1_moeda : in std_logic_vector(15 downto 0);
+			q0_obstaculo : in std_logic_vector(15 downto 0);
+			q1_obstaculo : in std_logic_vector(15 downto 0);
+			player_pos : in std_logic;
+			finished : out std_logic;
+			DATA : out std_logic_vector (7 downto 0);
+			E : out std_logic;
+			RS : out std_logic
+			);
+end lcd_driver;
+
+
+
+
+begin 
+
+end arch;

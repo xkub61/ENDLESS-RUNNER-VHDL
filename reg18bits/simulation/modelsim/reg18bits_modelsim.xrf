@@ -1,5 +1,6 @@
 vendor_name = ModelSim
 source_file = 1, D:/2022-2/Laboratorio SD/Trabalho final/reg18bits/reg18bits.vhd
+source_file = 1, D:/2022-2/Laboratorio SD/Trabalho final/reg18bits/tb_reg18bits.vhd
 source_file = 1, D:/2022-2/Laboratorio SD/Trabalho final/reg18bits/db/reg18bits.cbx.xml
 source_file = 1, d:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, d:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
@@ -42,6 +43,7 @@ instance = comp, \tmp[15]\, tmp[15], reg18bits, 1
 instance = comp, \tmp[16]~feeder\, tmp[16]~feeder, reg18bits, 1
 instance = comp, \tmp[16]\, tmp[16], reg18bits, 1
 instance = comp, \tmp[17]~feeder\, tmp[17]~feeder, reg18bits, 1
+instance = comp, \reg18_RMV~I\, reg18_RMV, reg18bits, 1
 instance = comp, \tmp[17]\, tmp[17], reg18bits, 1
 instance = comp, \reg18_Q[0]~I\, reg18_Q[0], reg18bits, 1
 instance = comp, \reg18_Q[1]~I\, reg18_Q[1], reg18bits, 1
