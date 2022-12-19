@@ -1,0 +1,7 @@
+v 4
+file . "tb_sep_dez_un.vhd" "46833b1cbb933708e49b4467c1fc63ea4282304b" "20221218200018.553":
+  entity tb_sep_dez_un at 1( 0) + 0 on 53;
+  architecture tb of tb_sep_dez_un at 8( 121) + 0 on 54;
+file . "sep_dez_un.vhd" "40f543b63fcea753b7b2422f6377dedb3245d288" "20221218200018.552":
+  entity sep_dez_un at 1( 0) + 0 on 51;
+  architecture rtl of sep_dez_un at 13( 282) + 0 on 52;

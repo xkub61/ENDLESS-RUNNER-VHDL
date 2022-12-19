@@ -18,7 +18,8 @@ architecture arch of div_freq_5000 is
 	begin
 
 	process (div_CLK) is
-		variable   cnt  : unsigned(12 downto 0);
+		variable   cnt  : unsigned(12 downto 0) := to_unsigned(0,13);
+		variable const : unsigned(12 downto 0) := to_unsigned(5000,13);
 		begin
 			if (div_RESET = '1') then
 				cnt := to_unsigned(0,13);
@@ -27,7 +28,7 @@ architecture arch of div_freq_5000 is
 				cnt := cnt + to_unsigned(1,13);
 			end if;
 			
-			if cnt = to_unsigned(5000,13) then
+			if cnt >= const then
 					cnt := to_unsigned(0,13);
 					tmp <= not tmp;
 			else 

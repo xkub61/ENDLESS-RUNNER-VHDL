@@ -1,0 +1,1000 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\2022-2\Laboratorio SD\Trabalho final\GAME\simulation\modelsim
+Ebcd_7seg
+Z1 w1665697622
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dD:\2022-2\Laboratorio SD\Trabalho final\GAME\simulation\modelsim
+Z5 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/Bcd_7seg.vhd
+Z6 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/Bcd_7seg.vhd
+l0
+L4
+V`o6UecCXXcKXh[NWIfEzD0
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1671398550.970000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/Bcd_7seg.vhd|
+Z10 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/Bcd_7seg.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 Mj?kZhT<CDN2m7femMXLG1
+!i10b 1
+Awith_select_bcd7seg
+R2
+R3
+DEx4 work 8 bcd_7seg 0 22 `o6UecCXXcKXh[NWIfEzD0
+l12
+L11
+VL@J0Fa;=J9L0f9K9ndn5;3
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 Rn4][L6ALWXl^TkfnF7>i2
+!i10b 1
+Ecomp_10
+Z13 w1671127306
+Z14 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z15 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/comp_10.vhd
+Z16 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/comp_10.vhd
+l0
+L5
+V_EX@;8S2E0:XL0NZ67dWc3
+R7
+31
+Z17 !s108 1671398554.639000
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/comp_10.vhd|
+Z19 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/comp_10.vhd|
+R11
+R12
+!s100 e>D3WCI8I`F:G9fa6Y61:2
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 7 comp_10 0 22 _EX@;8S2E0:XL0NZ67dWc3
+l14
+L13
+V9IcH^JB]QCNZPklRg;b_V1
+R7
+31
+R17
+R18
+R19
+R11
+R12
+!s100 B`<GJl^gO^5A60RbeGF<51
+!i10b 1
+Ecomparador
+Z20 w1671141034
+R14
+R2
+R3
+R4
+Z21 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/Comparador.vhd
+Z22 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/Comparador.vhd
+l0
+L5
+VM:KB<_LioXm7m2Q=9FQXl1
+R7
+31
+Z23 !s108 1671398555.487000
+Z24 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/Comparador.vhd|
+Z25 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/Comparador.vhd|
+R11
+R12
+!s100 QN8dGRg]IB]3]bf42Te<`2
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 10 comparador 0 22 M:KB<_LioXm7m2Q=9FQXl1
+l14
+L13
+V4mAmmRXGKjg>eTDma;Vk`3
+R7
+31
+R23
+R24
+R25
+R11
+R12
+!s100 6A^]l9Bfn>9NNR22g`oiQ1
+!i10b 1
+Ecomparador_7_bits
+Z26 w1671141174
+R14
+R2
+R3
+R4
+Z27 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/comparador_7_bits.vhd
+Z28 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/comparador_7_bits.vhd
+l0
+L5
+VZeWeHHRj6hROm<5oXJFe:0
+R7
+31
+Z29 !s108 1671398555.866000
+Z30 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/comparador_7_bits.vhd|
+Z31 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/comparador_7_bits.vhd|
+R11
+R12
+!s100 cgF>gIoA<M_L@D3Q<YD[P0
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 17 comparador_7_bits 0 22 ZeWeHHRj6hROm<5oXJFe:0
+l16
+L15
+V:^UELE`?b?LjjCN[zR_oY3
+R7
+31
+R29
+R30
+R31
+R11
+R12
+!s100 8PB?@M@AXU@MboX[RgP__0
+!i10b 1
+Econt_10
+Z32 w1670439872
+R14
+R2
+R3
+R4
+Z33 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/cont_10.vhd
+Z34 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/cont_10.vhd
+l0
+L5
+V>P[=7Tha6OUKBJ>X4IO2Y1
+R7
+31
+Z35 !s108 1671398552.654000
+Z36 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/cont_10.vhd|
+Z37 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/cont_10.vhd|
+R11
+R12
+!s100 zgd28KOKJB5Q2_ijVVj]j1
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 7 cont_10 0 22 >P[=7Tha6OUKBJ>X4IO2Y1
+l15
+L14
+VJWA7ec@2En<1n19Vd30jQ1
+R7
+31
+R35
+R36
+R37
+R11
+R12
+!s100 WchgX4L5^WzMV<C=jL_?Y3
+!i10b 1
+Econt_4
+Z38 w1670434974
+R14
+R2
+R3
+R4
+Z39 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/cont_4.vhd
+Z40 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/cont_4.vhd
+l0
+L5
+VJB`6D]JQkaa?;F821P[JT3
+R7
+31
+Z41 !s108 1671398552.159000
+Z42 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/cont_4.vhd|
+Z43 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/cont_4.vhd|
+R11
+R12
+!s100 J[d1mgch6>3RBng0Ggoo11
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 6 cont_4 0 22 JB`6D]JQkaa?;F821P[JT3
+l15
+L14
+Vd9A[HlY9aLez[JGh?_m9a3
+R7
+31
+R41
+R42
+R43
+R11
+R12
+!s100 WAE70CKSL[:@]KeV0;;FD2
+!i10b 1
+Econtador_2_bits
+Z44 w1671123770
+R14
+R2
+R3
+R4
+Z45 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/Contador_2_bits.vhd
+Z46 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/Contador_2_bits.vhd
+l0
+L5
+VghWOaCG1jB]IN>`3=XK5D3
+R7
+31
+Z47 !s108 1671398554.264000
+Z48 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/Contador_2_bits.vhd|
+Z49 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/Contador_2_bits.vhd|
+R11
+R12
+!s100 CG2@=l8WC58E>;NlTfACU1
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 15 contador_2_bits 0 22 ghWOaCG1jB]IN>`3=XK5D3
+l16
+L15
+V;gcYU@OSQk5zhCd;4Q2:Z2
+R7
+31
+R47
+R48
+R49
+R11
+R12
+!s100 2X3Z>R:_La^e2YT[C@3Pm1
+!i10b 1
+Econtador_2_bits_no_en
+Z50 w1671216186
+R14
+R2
+R3
+R4
+Z51 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/contador_4.vhd
+Z52 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/contador_4.vhd
+l0
+L5
+V<_a1BGAc3nP5^C@I;bLW20
+R7
+31
+Z53 !s108 1671398559.129000
+Z54 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/contador_4.vhd|
+Z55 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/contador_4.vhd|
+R11
+R12
+!s100 XaWm=[bcm6z>c9HDLbb_42
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 21 contador_2_bits_no_en 0 22 <_a1BGAc3nP5^C@I;bLW20
+l14
+L13
+V69i?CnOiY>@QX5Q6LNQc30
+R7
+31
+R53
+R54
+R55
+R11
+R12
+!s100 WSbiW[LmK=<jX0>i6>HSM3
+!i10b 1
+Econtador_7_bits
+Z56 w1671140666
+R14
+R2
+R3
+R4
+Z57 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/contador_7_bits.vhd
+Z58 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/contador_7_bits.vhd
+l0
+L5
+V@RE8?<CWc:5Fje61Qa@LC1
+R7
+31
+Z59 !s108 1671398555.030000
+Z60 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/contador_7_bits.vhd|
+Z61 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/contador_7_bits.vhd|
+R11
+R12
+!s100 Sz_mH^7fQDK4`XO?<o;i;3
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 15 contador_7_bits 0 22 @RE8?<CWc:5Fje61Qa@LC1
+l15
+L14
+V2i0[l>bcYM>X785Tah@:Q0
+R7
+31
+R59
+R60
+R61
+R11
+R12
+!s100 ]3Z73WCPSh4B2b0T^cU@60
+!i10b 1
+Econtroladora_jogo
+Z62 w1671333552
+R14
+R2
+R3
+R4
+Z63 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/controladora_jogo.vhd
+Z64 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/controladora_jogo.vhd
+l0
+L5
+VzGcTJBZCYOE4fPV[0B_cD2
+R7
+31
+Z65 !s108 1671398551.739000
+Z66 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/controladora_jogo.vhd|
+Z67 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/controladora_jogo.vhd|
+R11
+R12
+!s100 0lGjUf13beF1gl5knI9X>3
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 17 controladora_jogo 0 22 zGcTJBZCYOE4fPV[0B_cD2
+l39
+L35
+V62[0e4UkzmM:>3fNPLRaj0
+R7
+31
+R65
+R66
+R67
+R11
+R12
+!s100 C:`Reh9eQ:kM62IETeYX^3
+!i10b 1
+Edata_path
+Z68 w1671396574
+R14
+R2
+R3
+R4
+Z69 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/Data_path.vhd
+Z70 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/Data_path.vhd
+l0
+L5
+VUhFGbzW026APogO]_@E7i0
+R7
+31
+Z71 !s108 1671398559.627000
+Z72 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/Data_path.vhd|
+Z73 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/Data_path.vhd|
+R11
+R12
+!s100 [z6QiGU9[ld=N@>Z33Oc?3
+!i10b 1
+Aestrutural
+R14
+R2
+R3
+DEx4 work 9 data_path 0 22 UhFGbzW026APogO]_@E7i0
+l180
+L48
+VPKP9d`K@h_b^KC4fEdae?3
+R7
+31
+R71
+R72
+R73
+R11
+R12
+!s100 0^2ER7FSa_[dMjGbdmj9G0
+!i10b 1
+Edisplay_7_seg
+Z74 w1671395176
+R14
+R2
+R3
+R4
+Z75 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/display_7_seg.vhd
+Z76 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/display_7_seg.vhd
+l0
+L5
+VAAYBC;3W><CJ:e;C]F5MY0
+R7
+31
+Z77 !s108 1671398550.281000
+Z78 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/display_7_seg.vhd|
+Z79 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/display_7_seg.vhd|
+R11
+R12
+!s100 Y@Wc7_KTjc?ebGWWBTA6R3
+!i10b 1
+Artl
+R14
+R2
+R3
+DEx4 work 13 display_7_seg 0 22 AAYBC;3W><CJ:e;C]F5MY0
+l31
+L12
+V<RcF0Go9Pn]K]z8iIj;;i3
+R7
+31
+R77
+R78
+R79
+R11
+R12
+!s100 KMCdOem[l]5eQilJCMnBF1
+!i10b 1
+Ediv_freq
+Z80 w1671167518
+R14
+R2
+R3
+R4
+Z81 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/div_freq.vhd
+Z82 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/div_freq.vhd
+l0
+L5
+V_:KSRJl_M8U1k]?oJLbZk1
+R7
+31
+Z83 !s108 1671398557.109000
+Z84 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/div_freq.vhd|
+Z85 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/div_freq.vhd|
+R11
+R12
+!s100 oEmMhD54I2m:UYaoCl7iE3
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 8 div_freq 0 22 _:KSRJl_M8U1k]?oJLbZk1
+l18
+L14
+VWAk3Z97`TdW75@iJBLb?63
+R7
+31
+R83
+R84
+R85
+R11
+R12
+!s100 =j3@]Pm;h@b`DG?^zNLR<3
+!i10b 1
+Ediv_freq_5000
+Z86 w1671215204
+R14
+R2
+R3
+R4
+Z87 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/div_freq_5000.vhd
+Z88 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/div_freq_5000.vhd
+l0
+L5
+V4z4ZljZ3@h=f5iOPGk[a]1
+R7
+31
+Z89 !s108 1671398558.751000
+Z90 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/div_freq_5000.vhd|
+Z91 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/div_freq_5000.vhd|
+R11
+R12
+!s100 =F0@HoOf;]8mZ?`WUA6872
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 13 div_freq_5000 0 22 4z4ZljZ3@h=f5iOPGk[a]1
+l18
+L14
+Vd3a[T5LUNZbGRUmh>Unf40
+R7
+31
+R89
+R90
+R91
+R11
+R12
+!s100 N<dLV<hI18GiN7jRI?Hej3
+!i10b 1
+Egame
+Z92 w1671396980
+R14
+R2
+R3
+R4
+Z93 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/GAME.vhd
+Z94 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/GAME.vhd
+l0
+L5
+VZBSZk77OYiU;l;UFh=dVM2
+R7
+31
+Z95 !s108 1671398561.042000
+Z96 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/GAME.vhd|
+Z97 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/GAME.vhd|
+R11
+R12
+!s100 l68Jhaz[;e0iV?gzR96o@2
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 4 game 0 22 ZBSZk77OYiU;l;UFh=dVM2
+l106
+L26
+V<QW_10:9m`XRilY=ENb_R2
+R7
+31
+R95
+R96
+R97
+R11
+R12
+!s100 E;]D`lK:HQX1?WP?l7Hz=0
+!i10b 1
+Elcd_driver
+Z98 w1671326978
+R14
+R2
+R3
+R4
+Z99 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/lcd_driver.vhd
+Z100 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/lcd_driver.vhd
+l0
+L5
+VT3EAGOGCY3N?M@7]Bl8Ck0
+R7
+31
+Z101 !s108 1671398560.577000
+Z102 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/lcd_driver.vhd|
+Z103 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/lcd_driver.vhd|
+R11
+R12
+!s100 dA]UOo3lHonhXn0<ejX330
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 10 lcd_driver 0 22 T3EAGOGCY3N?M@7]Bl8Ck0
+l93
+L21
+VK4Da:SQHbJNQZInkD7blf2
+R7
+31
+R101
+R102
+R103
+R11
+R12
+!s100 IAg4X3RfI;L6U^f1kEfT72
+!i10b 1
+Elcd_driver_dp
+Z104 w1671172788
+R14
+R2
+R3
+R4
+Z105 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/lcd_driver_dp.vhd
+Z106 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/lcd_driver_dp.vhd
+l0
+L5
+VCGo^:eKYF_TVNcYKbQ:;B0
+R7
+31
+Z107 !s108 1671398558.377000
+Z108 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/lcd_driver_dp.vhd|
+Z109 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/lcd_driver_dp.vhd|
+R11
+R12
+!s100 @0LFUTY>l_1c@F>K<N=Ml1
+!i10b 1
+Aestrutural
+R14
+R2
+R3
+DEx4 work 13 lcd_driver_dp 0 22 CGo^:eKYF_TVNcYKbQ:;B0
+l107
+L35
+Vbc2iimQ4QGal21U<[D73e1
+R7
+31
+R107
+R108
+R109
+R11
+R12
+!s100 R2MEM<e<j[HX[[bCSlU>n2
+!i10b 1
+Elcd_driver_fsm
+Z110 w1671328214
+R14
+R2
+R3
+R4
+Z111 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/lcd_driver_fsm.vhd
+Z112 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/lcd_driver_fsm.vhd
+l0
+L5
+VzeE@oM65M:EmNQ:g[HikB3
+R7
+31
+Z113 !s108 1671398560.113000
+Z114 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/lcd_driver_fsm.vhd|
+Z115 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/lcd_driver_fsm.vhd|
+R11
+R12
+!s100 :@ol93]Xk;G857=:aUU>j2
+!i10b 1
+Afsm
+R14
+R2
+R3
+DEx4 work 14 lcd_driver_fsm 0 22 zeE@oM65M:EmNQ:g[HikB3
+l49
+L36
+VRo9YgY16^9:1Q@7NB^X9T1
+R7
+31
+R113
+R114
+R115
+R11
+R12
+!s100 imTSQ_EII7Ld6JKKd:B@i2
+!i10b 1
+Elfsr
+Z116 w1671169394
+R14
+R2
+R3
+R4
+Z117 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/lfsr.vhd
+Z118 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/lfsr.vhd
+l0
+L5
+VmiDToFI9NY;WCakc4=1<H1
+R7
+31
+Z119 !s108 1671398557.499000
+Z120 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/lfsr.vhd|
+Z121 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/lfsr.vhd|
+R11
+R12
+!s100 GI4X557iW@lCO7HJ^55o[3
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 4 lfsr 0 22 miDToFI9NY;WCakc4=1<H1
+l16
+L13
+V6fgBO59dZR:QFCoXKLEOe3
+R7
+31
+R119
+R120
+R121
+R11
+R12
+!s100 1PFIMK>=:<4MiBH?ekFI03
+!i10b 1
+Emux_15
+Z122 w1671119454
+R14
+R2
+R3
+R4
+Z123 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/mux_15.vhd
+Z124 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/mux_15.vhd
+l0
+L5
+V834X9G05UQVF;1JVmf;b@0
+R7
+31
+Z125 !s108 1671398553.073000
+Z126 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/mux_15.vhd|
+Z127 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/mux_15.vhd|
+R11
+R12
+!s100 hLdCFGY5HEEZ08Q_he:<i0
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 6 mux_15 0 22 834X9G05UQVF;1JVmf;b@0
+l15
+L13
+VhGZUaC3bjEz;S5Y9^X9ce3
+R7
+31
+R125
+R126
+R127
+R11
+R12
+!s100 cBiJ_A3dX@4;l04zHDmYI2
+!i10b 1
+Emux_2
+Z128 w1671119858
+R14
+R2
+R3
+R4
+Z129 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/mux_2.vhd
+Z130 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/mux_2.vhd
+l0
+L5
+VX;WgzOKGHIFSLUOJD0YH^0
+R7
+31
+Z131 !s108 1671398553.441000
+Z132 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/mux_2.vhd|
+Z133 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/mux_2.vhd|
+R11
+R12
+!s100 j7b4F6CnRl@jEET4=S`O?1
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 5 mux_2 0 22 X;WgzOKGHIFSLUOJD0YH^0
+l15
+L13
+V@9SBXTD^H];HVYDGHX:hO0
+R7
+31
+R131
+R132
+R133
+R11
+R12
+!s100 @LHCcTd1_gJN7OoPcS:Da2
+!i10b 1
+Ereg18bits
+Z134 w1671141286
+R14
+R2
+R3
+R4
+Z135 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/reg18bits.vhd
+Z136 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/reg18bits.vhd
+l0
+L5
+VE@d>bE[6AjQL2F5j`;FP>0
+R7
+31
+Z137 !s108 1671398556.292000
+Z138 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/reg18bits.vhd|
+Z139 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/reg18bits.vhd|
+R11
+R12
+!s100 jg:N[2n58W_^j4@cYDJWH3
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 9 reg18bits 0 22 E@d>bE[6AjQL2F5j`;FP>0
+l17
+L16
+VgWKLK@CXZOR5S0^=nUZIY1
+R7
+31
+R137
+R138
+R139
+R11
+R12
+!s100 ]]GbZSV3ULXNV]GhC@<<P1
+!i10b 1
+Ereg_1bit
+Z140 w1671121552
+R2
+R3
+R4
+Z141 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/reg_1bit.vhd
+Z142 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/reg_1bit.vhd
+l0
+L4
+VfK]CfQfez557L6fkLzT^60
+R7
+31
+Z143 !s108 1671398553.858000
+Z144 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/reg_1bit.vhd|
+Z145 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/reg_1bit.vhd|
+R11
+R12
+!s100 `3`eT@BaIZSB12QQ2z>H=3
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 8 reg_1bit 0 22 fK]CfQfez557L6fkLzT^60
+l20
+L16
+VY?d:410^dV2iE4[GTO?zO3
+R7
+31
+R143
+R144
+R145
+R11
+R12
+!s100 1RCM;0iTIc:_QJiVD5I8K0
+!i10b 1
+Esep_dez_un
+Z146 w1671393766
+R14
+R2
+R3
+R4
+Z147 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/sep_dez_un.vhd
+Z148 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/sep_dez_un.vhd
+l0
+L5
+V91z[XanSF6GM:Kd^AJ:k[2
+R7
+31
+Z149 !s108 1671398551.373000
+Z150 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/sep_dez_un.vhd|
+Z151 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/sep_dez_un.vhd|
+R11
+R12
+!s100 @]kL6RXW57QS1BcP[bg^42
+!i10b 1
+Artl
+R14
+R2
+R3
+DEx4 work 10 sep_dez_un 0 22 91z[XanSF6GM:Kd^AJ:k[2
+l21
+L13
+VT8:=1V]3e3B8kY`_If2]91
+R7
+31
+R149
+R150
+R151
+R11
+R12
+!s100 hlBm];=DSBfm@hY313ige2
+!i10b 1
+Esr18bits_dual
+Z152 w1671169982
+R14
+R2
+R3
+R4
+Z153 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/sr18bits_dual.vhd
+Z154 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/sr18bits_dual.vhd
+l0
+L5
+Vb49b]RC8Zlg44[^I<V5Xo3
+R7
+31
+Z155 !s108 1671398557.885000
+Z156 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/sr18bits_dual.vhd|
+Z157 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/sr18bits_dual.vhd|
+R11
+R12
+!s100 c^L^fb6VhKX<Noez8=Bbo0
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 13 sr18bits_dual 0 22 b49b]RC8Zlg44[^I<V5Xo3
+l32
+L17
+V0=m<Lo499?<I=iAR:[>783
+R7
+31
+R155
+R156
+R157
+R11
+R12
+!s100 c=JFeNf1NhgcV[RdHDEiW1
+!i10b 1
+Etb_game
+Z158 w1671397470
+R14
+R2
+R3
+R4
+Z159 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/tb_GAME.vhd
+Z160 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/tb_GAME.vhd
+l0
+L5
+V8im9JRWAV?G`:gXZ]F>To0
+!s100 mXndBbJWLNlJo`QB08o4]0
+R7
+31
+!i10b 1
+Z161 !s108 1671398561.815000
+Z162 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/tb_GAME.vhd|
+Z163 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/tb_GAME.vhd|
+R11
+R12
+Atb
+R14
+R2
+R3
+DEx4 work 7 tb_game 0 22 8im9JRWAV?G`:gXZ]F>To0
+l34
+L8
+VEGTHFFCan4=4ml:Q6FSR[0
+!s100 E]Amfc<RcjNQG;2PM?olH2
+R7
+31
+!i10b 1
+R161
+R162
+R163
+R11
+R12
+Etimer
+Z164 w1671164210
+R14
+R2
+R3
+R4
+Z165 8D:/2022-2/Laboratorio SD/Trabalho final/GAME/timer.vhd
+Z166 FD:/2022-2/Laboratorio SD/Trabalho final/GAME/timer.vhd
+l0
+L5
+VN;dHGJz;cBPKPM[Cjn>aJ0
+R7
+31
+Z167 !s108 1671398556.678000
+Z168 !s90 -reportprogress|300|-93|-work|work|D:/2022-2/Laboratorio SD/Trabalho final/GAME/timer.vhd|
+Z169 !s107 D:/2022-2/Laboratorio SD/Trabalho final/GAME/timer.vhd|
+R11
+R12
+!s100 i:[nD>>oDX:QfgcJGobVP2
+!i10b 1
+Aarch
+R14
+R2
+R3
+DEx4 work 5 timer 0 22 N;dHGJz;cBPKPM[Cjn>aJ0
+l17
+L16
+V9Y:D]PMC02GGe4Z6gA3_]3
+R7
+31
+R167
+R168
+R169
+R11
+R12
+!s100 `=jm=gn4kDPZ>M[;i7^C=1
+!i10b 1

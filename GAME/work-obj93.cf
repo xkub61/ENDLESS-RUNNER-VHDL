@@ -1,88 +1,109 @@
 v 4
-file . "tb_controladora_jogo.vhd" "5a13728a29544dd04ce8be19c243b6a6a59924f1" "20221218023623.831":
-  entity tb_controladora_jogo at 1( 0) + 0 on 171;
-  architecture tb of tb_controladora_jogo at 8( 135) + 0 on 172;
-file . "timer.vhd" "f9a4ce9dde9ae37c1912493c9bced4b839b7626f" "20221218023623.833":
-  entity timer at 1( 0) + 0 on 177;
-  architecture arch of timer at 16( 245) + 0 on 178;
-file . "tb_reg_4.vhd" "30b443158299719de9ebb7ff573f00e1aaeb5edd" "20221218023623.832":
-  entity tb_reg_4 at 1( 0) + 0 on 175;
-  architecture tb of tb_reg_4 at 8( 112) + 0 on 176;
-file . "tb_lcd_driver.vhd" "467aec0735df1524c3e59b0affa86d154417f488" "20221218023623.832":
-  entity tb_lcd_driver at 1( 0) + 0 on 173;
-  architecture tb of tb_lcd_driver at 10( 125) + 0 on 174;
-file . "sr18bits_dual.vhd" "d4a395baa28d683cbf4eec6144061e93fd2acdfb" "20221218023623.827":
-  entity sr18bits_dual at 1( 0) + 0 on 167;
-  architecture arch of sr18bits_dual at 17( 357) + 0 on 168;
-file . "reg_1bit.vhd" "1a2ef292d9ff2f0ae85334b6c3909e55d1d0117d" "20221218023623.824":
-  entity reg_1bit at 1( 0) + 0 on 165;
-  architecture rtl of reg_1bit at 16( 263) + 0 on 166;
-file . "reg2bits.vhd" "4efcbfed9271685fe22857bbd43fb31f18dcdcc3" "20221218023623.823":
-  entity reg2bits at 1( 0) + 0 on 163;
-  architecture arch of reg2bits at 15( 286) + 0 on 164;
-file . "reg18bits.vhd" "6af997e9e861dfc8f2336974654a1db9f1e9b84b" "20221218023623.822":
-  entity reg18bits at 1( 0) + 0 on 161;
-  architecture arch of reg18bits at 16( 323) + 0 on 162;
-file . "mux_2.vhd" "5ae0ac77ea72e690feaf198475f802ebdaf17d8b" "20221218023623.821":
-  entity mux_2 at 1( 0) + 0 on 159;
-  architecture arch of mux_2 at 13( 232) + 0 on 160;
-file . "mux_15.vhd" "87e622141568382b768e63b282efada300dd63b1" "20221218023623.820":
-  entity mux_15 at 1( 0) + 0 on 157;
-  architecture arch of mux_15 at 13( 251) + 0 on 158;
-file . "lfsr.vhd" "7596c124731f4812739f12f2be25f6a4064430cd" "20221218023623.819":
-  entity lfsr at 1( 0) + 0 on 155;
-  architecture arch of lfsr at 13( 204) + 0 on 156;
-file . "lcd_driver_fsm.vhd" "a0ec2ca91b3fcd8e6e4536c033ba1699d876f747" "20221218023623.818":
-  entity lcd_driver_fsm at 1( 0) + 0 on 153;
-  architecture fsm of lcd_driver_fsm at 36( 1034) + 0 on 154;
-file . "lcd_driver_dp.vhd" "dccc192f025298f6d8bdd872eb044608f12feeba" "20221218023623.806":
-  entity lcd_driver_dp at 1( 0) + 0 on 151;
-  architecture estrutural of lcd_driver_dp at 35( 961) + 0 on 152;
-file . "lcd_driver.vhd" "0dbd801964e7cca538c27563834f793187d7df3a" "20221218023623.804":
-  entity lcd_driver at 1( 0) + 0 on 149;
-  architecture arch of lcd_driver at 21( 577) + 0 on 150;
-file . "div_freq_5000.vhd" "2e12bafc0dcc2295b6ab0b7053e91cc124154ba6" "20221218023623.803":
-  entity div_freq_5000 at 1( 0) + 0 on 147;
-  architecture arch of div_freq_5000 at 14( 225) + 0 on 148;
-file . "div_freq.vhd" "14e8607d78daab97160b35af937c7ec808d7b6a8" "20221218023623.802":
-  entity div_freq at 1( 0) + 0 on 145;
-  architecture arch of div_freq at 14( 215) + 0 on 146;
-file . "controladora_jogo.vhd" "deb6c6a5ee2c6c63d6bc2923722694e9451a0a6f" "20221218023623.800":
-  entity controladora_jogo at 1( 0) + 0 on 143;
-  architecture arch of controladora_jogo at 35( 939) + 0 on 144;
-file . "contador_7_bits.vhd" "91cfb374b6d1928fb68395325098136493d7fa40" "20221218023623.796":
-  entity contador_7_bits at 1( 0) + 0 on 141;
-  architecture arch of contador_7_bits at 14( 256) + 0 on 142;
-file . "contador_4.vhd" "3ae00f42cf63e3fe43b14d086eafa54ff432c52b" "20221218023623.792":
-  entity contador_2_bits_no_en at 1( 0) + 0 on 139;
-  architecture arch of contador_2_bits_no_en at 13( 255) + 0 on 140;
-file . "cont_4.vhd" "1a36eb88cdbe687b1f698f3c0622d9f05dc959b9" "20221218023623.790":
-  entity cont_4 at 1( 0) + 0 on 137;
-  architecture arch of cont_4 at 14( 252) + 0 on 138;
-file . "cont_10.vhd" "01152bbebcbead2b349d96925e0c9f1bb306c76f" "20221218023623.788":
-  entity cont_10 at 1( 0) + 0 on 135;
-  architecture arch of cont_10 at 14( 260) + 0 on 136;
-file . "comparador_7_bits.vhd" "ff115d6024755a3e38a6b0283a30d63104023ac2" "20221218023623.787":
-  entity comparador_7_bits at 1( 0) + 0 on 133;
-  architecture arch of comparador_7_bits at 15( 326) + 0 on 134;
-file . "comp_2.vhd" "b369a54408a7f6abeb2affd1a14c504a710196bd" "20221218023623.786":
-  entity comp_2 at 1( 0) + 0 on 131;
-  architecture arch of comp_2 at 13( 239) + 0 on 132;
-file . "comp_10.vhd" "f870d7d89e5a3c8d245af681bf7d2b8c14a4f04a" "20221218023623.784":
-  entity comp_10 at 1( 0) + 0 on 129;
-  architecture arch of comp_10 at 13( 242) + 0 on 130;
-file . "GAME.vhd" "6fe6be343c0bf135b7e21b98ef4bc96e7bf8ed73" "20221218023623.783":
-  entity game at 1( 0) + 0 on 127;
-  architecture arch of game at 19( 458) + 0 on 128;
-file . "Data_path.vhd" "b1b6efc109a2a867daf0e56ba63d13873b7f797c" "20221218023623.777":
-  entity data_path at 1( 0) + 0 on 125;
-  architecture estrutural of data_path at 44( 1274) + 0 on 126;
-file . "Contador_2_bits.vhd" "ff02bae2253a3d2b516da86ef37cd1e1878a9181" "20221218023623.773":
-  entity contador_2_bits at 1( 0) + 0 on 123;
-  architecture arch of contador_2_bits at 15( 275) + 0 on 124;
-file . "Comparador.vhd" "9bf6de1f1c36751d2d8d0e5b0c320f98dd1827f7" "20221218023623.771":
-  entity comparador at 1( 0) + 0 on 121;
-  architecture arch of comparador at 13( 196) + 0 on 122;
-file . "tb_GAME.vhd" "902226299906024c39acf569e5c90285bf39f09d" "20221218023623.829":
-  entity tb_game at 1( 0) + 0 on 169;
-  architecture tb of tb_game at 8( 102) + 0 on 170;
+file . "tb_timer.vhd" "49a74ff05ae2f2451d174edb2fb3fb1e0fc2d3d4" "20221218235207.236":
+  entity tb_timer at 1( 0) + 0 on 1075;
+  architecture tb of tb_timer at 8( 111) + 0 on 1076;
+file . "tb_Data_path.vhd" "3aff7ca76adc39dd4b57ed055106716074a12c6d" "20221218235207.229":
+  entity tb_data_path at 1( 0) + 0 on 1061;
+  architecture tb of tb_data_path at 9( 120) + 0 on 1062;
+file . "tb_sep_dez_un.vhd" "46833b1cbb933708e49b4467c1fc63ea4282304b" "20221218235207.235":
+  entity tb_sep_dez_un at 1( 0) + 0 on 1073;
+  architecture tb of tb_sep_dez_un at 8( 121) + 0 on 1074;
+file . "tb_display_7_seg.vhd" "e43011fb5088492f3ddb0fc79fd6819012fa0b20" "20221218235207.232":
+  entity tb_display_7_seg at 1( 0) + 0 on 1067;
+  architecture tb of tb_display_7_seg at 9( 128) + 0 on 1068;
+file . "sep_dez_un.vhd" "01c53b77d3ba51b6e34dd9beaf37cf30a16c76a9" "20221218235207.220":
+  entity sep_dez_un at 1( 0) + 0 on 1057;
+  architecture rtl of sep_dez_un at 13( 282) + 0 on 1058;
+file . "display_7_seg.vhd" "b27f7b925948637ef4173dd4a8153087e1cd3cc3" "20221218235207.194":
+  entity display_7_seg at 1( 0) + 0 on 1033;
+  architecture rtl of display_7_seg at 12( 253) + 0 on 1034;
+file . "Bcd_7seg.vhd" "3b39aa6e22b8cb976ff0847581c1e6d83ce10019" "20221218235207.170":
+  entity bcd_7seg at 1( 0) + 0 on 1007;
+  architecture with_select_bcd7seg of bcd_7seg at 11( 201) + 0 on 1008;
+file . "tb_GAME.vhd" "c6d019699d97d7e9fc885806173d85c4d9678982" "20221218235207.230":
+  entity tb_game at 1( 0) + 0 on 1063;
+  architecture tb of tb_game at 8( 102) + 0 on 1064;
+file . "Comparador.vhd" "9bf6de1f1c36751d2d8d0e5b0c320f98dd1827f7" "20221218235207.175":
+  entity comparador at 1( 0) + 0 on 1009;
+  architecture arch of comparador at 13( 196) + 0 on 1010;
+file . "Contador_2_bits.vhd" "ff02bae2253a3d2b516da86ef37cd1e1878a9181" "20221218235207.176":
+  entity contador_2_bits at 1( 0) + 0 on 1011;
+  architecture arch of contador_2_bits at 15( 275) + 0 on 1012;
+file . "Data_path.vhd" "6f01833744e3e85cfdc4d4a2c69bf932c8560144" "20221218235207.179":
+  entity data_path at 1( 0) + 0 on 1013;
+  architecture estrutural of data_path at 48( 1485) + 0 on 1014;
+file . "GAME.vhd" "f518312dd2e42bdb62da37f2b04c64636c4936ba" "20221218235207.180":
+  entity game at 1( 0) + 0 on 1015;
+  architecture arch of game at 26( 689) + 0 on 1016;
+file . "comp_10.vhd" "f870d7d89e5a3c8d245af681bf7d2b8c14a4f04a" "20221218235207.181":
+  entity comp_10 at 1( 0) + 0 on 1017;
+  architecture arch of comp_10 at 13( 242) + 0 on 1018;
+file . "comp_2.vhd" "b369a54408a7f6abeb2affd1a14c504a710196bd" "20221218235207.182":
+  entity comp_2 at 1( 0) + 0 on 1019;
+  architecture arch of comp_2 at 13( 239) + 0 on 1020;
+file . "comparador_7_bits.vhd" "ff115d6024755a3e38a6b0283a30d63104023ac2" "20221218235207.183":
+  entity comparador_7_bits at 1( 0) + 0 on 1021;
+  architecture arch of comparador_7_bits at 15( 326) + 0 on 1022;
+file . "cont_10.vhd" "01152bbebcbead2b349d96925e0c9f1bb306c76f" "20221218235207.184":
+  entity cont_10 at 1( 0) + 0 on 1023;
+  architecture arch of cont_10 at 14( 260) + 0 on 1024;
+file . "cont_4.vhd" "1a36eb88cdbe687b1f698f3c0622d9f05dc959b9" "20221218235207.185":
+  entity cont_4 at 1( 0) + 0 on 1025;
+  architecture arch of cont_4 at 14( 252) + 0 on 1026;
+file . "contador_4.vhd" "3ae00f42cf63e3fe43b14d086eafa54ff432c52b" "20221218235207.185":
+  entity contador_2_bits_no_en at 1( 0) + 0 on 1027;
+  architecture arch of contador_2_bits_no_en at 13( 255) + 0 on 1028;
+file . "contador_7_bits.vhd" "91cfb374b6d1928fb68395325098136493d7fa40" "20221218235207.187":
+  entity contador_7_bits at 1( 0) + 0 on 1029;
+  architecture arch of contador_7_bits at 14( 256) + 0 on 1030;
+file . "controladora_jogo.vhd" "46523e24b33f9e5f649450cc457ad4ae3f47fdc3" "20221218235207.193":
+  entity controladora_jogo at 1( 0) + 0 on 1031;
+  architecture arch of controladora_jogo at 35( 939) + 0 on 1032;
+file . "div_freq.vhd" "14e8607d78daab97160b35af937c7ec808d7b6a8" "20221218235207.196":
+  entity div_freq at 1( 0) + 0 on 1035;
+  architecture arch of div_freq at 14( 215) + 0 on 1036;
+file . "div_freq_5000.vhd" "5739ef70f8119f7d8d18174b411abc63293002d8" "20221218235207.198":
+  entity div_freq_5000 at 1( 0) + 0 on 1037;
+  architecture arch of div_freq_5000 at 14( 225) + 0 on 1038;
+file . "lcd_driver.vhd" "0dbd801964e7cca538c27563834f793187d7df3a" "20221218235207.199":
+  entity lcd_driver at 1( 0) + 0 on 1039;
+  architecture arch of lcd_driver at 21( 577) + 0 on 1040;
+file . "lcd_driver_dp.vhd" "dccc192f025298f6d8bdd872eb044608f12feeba" "20221218235207.201":
+  entity lcd_driver_dp at 1( 0) + 0 on 1041;
+  architecture estrutural of lcd_driver_dp at 35( 961) + 0 on 1042;
+file . "lcd_driver_fsm.vhd" "8467aaed3f8134df3f0539d0508fd7f65599942b" "20221218235207.211":
+  entity lcd_driver_fsm at 1( 0) + 0 on 1043;
+  architecture fsm of lcd_driver_fsm at 36( 1034) + 0 on 1044;
+file . "lfsr.vhd" "7596c124731f4812739f12f2be25f6a4064430cd" "20221218235207.213":
+  entity lfsr at 1( 0) + 0 on 1045;
+  architecture arch of lfsr at 13( 204) + 0 on 1046;
+file . "mux_15.vhd" "87e622141568382b768e63b282efada300dd63b1" "20221218235207.214":
+  entity mux_15 at 1( 0) + 0 on 1047;
+  architecture arch of mux_15 at 13( 251) + 0 on 1048;
+file . "mux_2.vhd" "5ae0ac77ea72e690feaf198475f802ebdaf17d8b" "20221218235207.215":
+  entity mux_2 at 1( 0) + 0 on 1049;
+  architecture arch of mux_2 at 13( 232) + 0 on 1050;
+file . "reg18bits.vhd" "6af997e9e861dfc8f2336974654a1db9f1e9b84b" "20221218235207.216":
+  entity reg18bits at 1( 0) + 0 on 1051;
+  architecture arch of reg18bits at 16( 323) + 0 on 1052;
+file . "reg2bits.vhd" "4efcbfed9271685fe22857bbd43fb31f18dcdcc3" "20221218235207.218":
+  entity reg2bits at 1( 0) + 0 on 1053;
+  architecture arch of reg2bits at 15( 286) + 0 on 1054;
+file . "reg_1bit.vhd" "1a2ef292d9ff2f0ae85334b6c3909e55d1d0117d" "20221218235207.219":
+  entity reg_1bit at 1( 0) + 0 on 1055;
+  architecture rtl of reg_1bit at 16( 263) + 0 on 1056;
+file . "sr18bits_dual.vhd" "d4a395baa28d683cbf4eec6144061e93fd2acdfb" "20221218235207.227":
+  entity sr18bits_dual at 1( 0) + 0 on 1059;
+  architecture arch of sr18bits_dual at 17( 357) + 0 on 1060;
+file . "tb_lcd_driver.vhd" "467aec0735df1524c3e59b0affa86d154417f488" "20221218235207.233":
+  entity tb_lcd_driver at 1( 0) + 0 on 1069;
+  architecture tb of tb_lcd_driver at 10( 125) + 0 on 1070;
+file . "tb_reg_4.vhd" "30b443158299719de9ebb7ff573f00e1aaeb5edd" "20221218235207.234":
+  entity tb_reg_4 at 1( 0) + 0 on 1071;
+  architecture tb of tb_reg_4 at 8( 112) + 0 on 1072;
+file . "timer.vhd" "8c5a968e442033a5ed95b19849713a3be472ba88" "20221218235207.237":
+  entity timer at 1( 0) + 0 on 1077;
+  architecture arch of timer at 16( 245) + 0 on 1078;
+file . "tb_controladora_jogo.vhd" "51e7f2572fd2b56e199515be357bfe66633483fd" "20221218235207.231":
+  entity tb_controladora_jogo at 1( 0) + 0 on 1065;
+  architecture tb of tb_controladora_jogo at 8( 135) + 0 on 1066;

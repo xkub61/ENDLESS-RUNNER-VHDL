@@ -36,8 +36,12 @@ entity Data_path is
 			dt_finished : out std_logic;
 			dt_data : out std_logic_vector(7 downto 0);
 			dt_rs : out std_logic;
-			dt_e : out std_logic
+			dt_e : out std_logic;
 			
+			dt_d1_dez : out std_logic_vector(6 downto 0);
+			dt_d1_un : out std_logic_vector(6 downto 0);
+			dt_d2_dez : out std_logic_vector(6 downto 0);
+			dt_d2_un : out std_logic_vector(6 downto 0)
 			);
 end Data_path;
 
@@ -161,7 +165,14 @@ architecture estrutural of Data_path is
 					);
 		end component;
 		
-	signal s1, s2 : std_logic_vector(6 downto 0);
+    component display_7_seg is
+        port (
+            entrada : in std_logic_vector(6 downto 0);
+            saida_dez, saida_un : out std_logic_vector(6 downto 0)
+        );
+    end component;		
+		
+	signal s1, s2, s15, s16, s17, s18 : std_logic_vector(6 downto 0);
 	signal s3, s4, s5, s7 , s12, s13, s14: std_logic;
 	signal s6 : std_logic_vector(1 downto 0);
 	signal s8, s9, s10, s11 : std_logic_vector(16 downto 0);
@@ -223,7 +234,7 @@ architecture estrutural of Data_path is
 														sr_CLR => dt_clr,
 														sr_Q0 => s10,
 														sr_Q1 => s11);
-		s12 <=(s6(0) nand s6(1)); 
+		s12 <=(s6(0) and s6(1)); 
 		
 		sr_obstaculo : sr18bits_dual port map(	sr_CLK => s3,
 																sr_IN0 => s12,
@@ -258,6 +269,19 @@ architecture estrutural of Data_path is
 						E => dt_e,
 						RS => dt_rs
 						);
+
+		displa1 : display_7_seg port map (
+			  entrada => s1,
+			  saida_dez => dt_d1_dez,
+			  saida_un => dt_d1_un
+		 );
+		 
+		displa2 : display_7_seg port map (
+			  entrada => s2,
+			  saida_dez => dt_d2_dez,
+			  saida_un => dt_d2_un
+		 );
+		
 		
 		dt_tem_moeda <= s10(16);
 		

@@ -1,0 +1,65 @@
+$date
+  Sun Dec 18 17:00:20 2022
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module tb_sep_dez_un $end
+$var reg 7 ! s_num[6:0] $end
+$var reg 4 " s_dez[3:0] $end
+$var reg 4 # s_uni[3:0] $end
+$scope module instancia_sep $end
+$var reg 7 $ numero[6:0] $end
+$var reg 4 % dezena[3:0] $end
+$var reg 4 & unidade[3:0] $end
+$var integer 32 ' digit1 $end
+$var integer 32 ( digit2 $end
+$comment digits is not handled $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b0101101 !
+b0100 "
+b0101 #
+b0101101 $
+b0100 %
+b0101 &
+b101 '
+b100 (
+#10000000
+b1100000 !
+b1001 "
+b0110 #
+b1100000 $
+b1001 %
+b0110 &
+b110 '
+b1001 (
+#15000000
+b1010000 !
+b1000 "
+b0000 #
+b1010000 $
+b1000 %
+b0000 &
+b0 '
+b1000 (
+#20000000
+b0010000 !
+b0001 "
+b0110 #
+b0010000 $
+b0001 %
+b0110 &
+b110 '
+b1 (

@@ -16,7 +16,7 @@ end timer;
 architecture arch of timer is
 	begin
 		process(tmr_clk,tmr_reset) is
-			variable temp : unsigned (BITS - 1 downto 0);
+			variable temp : unsigned (BITS - 1 downto 0) := to_unsigned(0,BITS);
 			begin
 			if tmr_reset = '1' then
 				temp := to_unsigned(0, BITS);

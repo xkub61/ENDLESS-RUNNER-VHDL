@@ -17,6 +17,34 @@ lcd_e_pin <= Data_path:caminho_de_dados.dt_e
 lcd_on_pin <= <VCC>
 lcd_blon_pin <= <GND>
 lcd_rw_pin <= <GND>
+d7s_1_dez[0] <= Data_path:caminho_de_dados.dt_d1_dez[0]
+d7s_1_dez[1] <= Data_path:caminho_de_dados.dt_d1_dez[1]
+d7s_1_dez[2] <= Data_path:caminho_de_dados.dt_d1_dez[2]
+d7s_1_dez[3] <= Data_path:caminho_de_dados.dt_d1_dez[3]
+d7s_1_dez[4] <= Data_path:caminho_de_dados.dt_d1_dez[4]
+d7s_1_dez[5] <= Data_path:caminho_de_dados.dt_d1_dez[5]
+d7s_1_dez[6] <= Data_path:caminho_de_dados.dt_d1_dez[6]
+d7s_1_un[0] <= Data_path:caminho_de_dados.dt_d1_un[0]
+d7s_1_un[1] <= Data_path:caminho_de_dados.dt_d1_un[1]
+d7s_1_un[2] <= Data_path:caminho_de_dados.dt_d1_un[2]
+d7s_1_un[3] <= Data_path:caminho_de_dados.dt_d1_un[3]
+d7s_1_un[4] <= Data_path:caminho_de_dados.dt_d1_un[4]
+d7s_1_un[5] <= Data_path:caminho_de_dados.dt_d1_un[5]
+d7s_1_un[6] <= Data_path:caminho_de_dados.dt_d1_un[6]
+d7s_2_dez[0] <= Data_path:caminho_de_dados.dt_d2_dez[0]
+d7s_2_dez[1] <= Data_path:caminho_de_dados.dt_d2_dez[1]
+d7s_2_dez[2] <= Data_path:caminho_de_dados.dt_d2_dez[2]
+d7s_2_dez[3] <= Data_path:caminho_de_dados.dt_d2_dez[3]
+d7s_2_dez[4] <= Data_path:caminho_de_dados.dt_d2_dez[4]
+d7s_2_dez[5] <= Data_path:caminho_de_dados.dt_d2_dez[5]
+d7s_2_dez[6] <= Data_path:caminho_de_dados.dt_d2_dez[6]
+d7s_2_un[0] <= Data_path:caminho_de_dados.dt_d2_un[0]
+d7s_2_un[1] <= Data_path:caminho_de_dados.dt_d2_un[1]
+d7s_2_un[2] <= Data_path:caminho_de_dados.dt_d2_un[2]
+d7s_2_un[3] <= Data_path:caminho_de_dados.dt_d2_un[3]
+d7s_2_un[4] <= Data_path:caminho_de_dados.dt_d2_un[4]
+d7s_2_un[5] <= Data_path:caminho_de_dados.dt_d2_un[5]
+d7s_2_un[6] <= Data_path:caminho_de_dados.dt_d2_un[6]
 
 
 |GAME|controladora_jogo:controladora
@@ -120,6 +148,34 @@ dt_data[6] <= lcd_driver:lcd.DATA[6]
 dt_data[7] <= lcd_driver:lcd.DATA[7]
 dt_rs <= lcd_driver:lcd.RS
 dt_e <= lcd_driver:lcd.E
+dt_d1_dez[0] <= display_7_seg:displa1.saida_dez[0]
+dt_d1_dez[1] <= display_7_seg:displa1.saida_dez[1]
+dt_d1_dez[2] <= display_7_seg:displa1.saida_dez[2]
+dt_d1_dez[3] <= display_7_seg:displa1.saida_dez[3]
+dt_d1_dez[4] <= display_7_seg:displa1.saida_dez[4]
+dt_d1_dez[5] <= display_7_seg:displa1.saida_dez[5]
+dt_d1_dez[6] <= display_7_seg:displa1.saida_dez[6]
+dt_d1_un[0] <= display_7_seg:displa1.saida_un[0]
+dt_d1_un[1] <= display_7_seg:displa1.saida_un[1]
+dt_d1_un[2] <= display_7_seg:displa1.saida_un[2]
+dt_d1_un[3] <= display_7_seg:displa1.saida_un[3]
+dt_d1_un[4] <= display_7_seg:displa1.saida_un[4]
+dt_d1_un[5] <= display_7_seg:displa1.saida_un[5]
+dt_d1_un[6] <= display_7_seg:displa1.saida_un[6]
+dt_d2_dez[0] <= display_7_seg:displa2.saida_dez[0]
+dt_d2_dez[1] <= display_7_seg:displa2.saida_dez[1]
+dt_d2_dez[2] <= display_7_seg:displa2.saida_dez[2]
+dt_d2_dez[3] <= display_7_seg:displa2.saida_dez[3]
+dt_d2_dez[4] <= display_7_seg:displa2.saida_dez[4]
+dt_d2_dez[5] <= display_7_seg:displa2.saida_dez[5]
+dt_d2_dez[6] <= display_7_seg:displa2.saida_dez[6]
+dt_d2_un[0] <= display_7_seg:displa2.saida_un[0]
+dt_d2_un[1] <= display_7_seg:displa2.saida_un[1]
+dt_d2_un[2] <= display_7_seg:displa2.saida_un[2]
+dt_d2_un[3] <= display_7_seg:displa2.saida_un[3]
+dt_d2_un[4] <= display_7_seg:displa2.saida_un[4]
+dt_d2_un[5] <= display_7_seg:displa2.saida_un[5]
+dt_d2_un[6] <= display_7_seg:displa2.saida_un[6]
 
 
 |GAME|Data_path:caminho_de_dados|Contador_7_bits:contador_moedas_1
@@ -1273,5 +1329,255 @@ comp_B[7] => LessThan0.IN13
 comp_B[8] => LessThan0.IN12
 comp_B[9] => LessThan0.IN11
 comp_S <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|GAME|Data_path:caminho_de_dados|display_7_seg:displa1
+entrada[0] => sep_dez_un:separador.numero[0]
+entrada[1] => sep_dez_un:separador.numero[1]
+entrada[2] => sep_dez_un:separador.numero[2]
+entrada[3] => sep_dez_un:separador.numero[3]
+entrada[4] => sep_dez_un:separador.numero[4]
+entrada[5] => sep_dez_un:separador.numero[5]
+entrada[6] => sep_dez_un:separador.numero[6]
+saida_dez[0] <= Bcd_7seg:dez.saida[0]
+saida_dez[1] <= Bcd_7seg:dez.saida[1]
+saida_dez[2] <= Bcd_7seg:dez.saida[2]
+saida_dez[3] <= Bcd_7seg:dez.saida[3]
+saida_dez[4] <= Bcd_7seg:dez.saida[4]
+saida_dez[5] <= Bcd_7seg:dez.saida[5]
+saida_dez[6] <= Bcd_7seg:dez.saida[6]
+saida_un[0] <= Bcd_7seg:un.saida[0]
+saida_un[1] <= Bcd_7seg:un.saida[1]
+saida_un[2] <= Bcd_7seg:un.saida[2]
+saida_un[3] <= Bcd_7seg:un.saida[3]
+saida_un[4] <= Bcd_7seg:un.saida[4]
+saida_un[5] <= Bcd_7seg:un.saida[5]
+saida_un[6] <= Bcd_7seg:un.saida[6]
+
+
+|GAME|Data_path:caminho_de_dados|display_7_seg:displa1|sep_dez_un:separador
+numero[0] => Div0.IN10
+numero[0] => unidade[0].DATAIN
+numero[1] => Div0.IN9
+numero[1] => Add1.IN20
+numero[2] => Div0.IN8
+numero[2] => Add1.IN19
+numero[3] => Div0.IN7
+numero[3] => Add1.IN18
+numero[4] => Div0.IN6
+numero[4] => Add1.IN17
+numero[5] => Div0.IN5
+numero[5] => Add1.IN16
+numero[6] => Div0.IN4
+numero[6] => Add1.IN15
+dezena[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[0] <= numero[0].DB_MAX_OUTPUT_PORT_TYPE
+unidade[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+unidade[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+unidade[3] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|GAME|Data_path:caminho_de_dados|display_7_seg:displa1|Bcd_7seg:dez
+entrada[0] => Mux0.IN19
+entrada[0] => Mux1.IN19
+entrada[0] => Mux2.IN19
+entrada[0] => Mux3.IN19
+entrada[0] => Mux4.IN19
+entrada[0] => Mux5.IN19
+entrada[0] => Mux6.IN19
+entrada[1] => Mux0.IN18
+entrada[1] => Mux1.IN18
+entrada[1] => Mux2.IN18
+entrada[1] => Mux3.IN18
+entrada[1] => Mux4.IN18
+entrada[1] => Mux5.IN18
+entrada[1] => Mux6.IN18
+entrada[2] => Mux0.IN17
+entrada[2] => Mux1.IN17
+entrada[2] => Mux2.IN17
+entrada[2] => Mux3.IN17
+entrada[2] => Mux4.IN17
+entrada[2] => Mux5.IN17
+entrada[2] => Mux6.IN17
+entrada[3] => Mux0.IN16
+entrada[3] => Mux1.IN16
+entrada[3] => Mux2.IN16
+entrada[3] => Mux3.IN16
+entrada[3] => Mux4.IN16
+entrada[3] => Mux5.IN16
+entrada[3] => Mux6.IN16
+saida[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|GAME|Data_path:caminho_de_dados|display_7_seg:displa1|Bcd_7seg:un
+entrada[0] => Mux0.IN19
+entrada[0] => Mux1.IN19
+entrada[0] => Mux2.IN19
+entrada[0] => Mux3.IN19
+entrada[0] => Mux4.IN19
+entrada[0] => Mux5.IN19
+entrada[0] => Mux6.IN19
+entrada[1] => Mux0.IN18
+entrada[1] => Mux1.IN18
+entrada[1] => Mux2.IN18
+entrada[1] => Mux3.IN18
+entrada[1] => Mux4.IN18
+entrada[1] => Mux5.IN18
+entrada[1] => Mux6.IN18
+entrada[2] => Mux0.IN17
+entrada[2] => Mux1.IN17
+entrada[2] => Mux2.IN17
+entrada[2] => Mux3.IN17
+entrada[2] => Mux4.IN17
+entrada[2] => Mux5.IN17
+entrada[2] => Mux6.IN17
+entrada[3] => Mux0.IN16
+entrada[3] => Mux1.IN16
+entrada[3] => Mux2.IN16
+entrada[3] => Mux3.IN16
+entrada[3] => Mux4.IN16
+entrada[3] => Mux5.IN16
+entrada[3] => Mux6.IN16
+saida[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|GAME|Data_path:caminho_de_dados|display_7_seg:displa2
+entrada[0] => sep_dez_un:separador.numero[0]
+entrada[1] => sep_dez_un:separador.numero[1]
+entrada[2] => sep_dez_un:separador.numero[2]
+entrada[3] => sep_dez_un:separador.numero[3]
+entrada[4] => sep_dez_un:separador.numero[4]
+entrada[5] => sep_dez_un:separador.numero[5]
+entrada[6] => sep_dez_un:separador.numero[6]
+saida_dez[0] <= Bcd_7seg:dez.saida[0]
+saida_dez[1] <= Bcd_7seg:dez.saida[1]
+saida_dez[2] <= Bcd_7seg:dez.saida[2]
+saida_dez[3] <= Bcd_7seg:dez.saida[3]
+saida_dez[4] <= Bcd_7seg:dez.saida[4]
+saida_dez[5] <= Bcd_7seg:dez.saida[5]
+saida_dez[6] <= Bcd_7seg:dez.saida[6]
+saida_un[0] <= Bcd_7seg:un.saida[0]
+saida_un[1] <= Bcd_7seg:un.saida[1]
+saida_un[2] <= Bcd_7seg:un.saida[2]
+saida_un[3] <= Bcd_7seg:un.saida[3]
+saida_un[4] <= Bcd_7seg:un.saida[4]
+saida_un[5] <= Bcd_7seg:un.saida[5]
+saida_un[6] <= Bcd_7seg:un.saida[6]
+
+
+|GAME|Data_path:caminho_de_dados|display_7_seg:displa2|sep_dez_un:separador
+numero[0] => Div0.IN10
+numero[0] => unidade[0].DATAIN
+numero[1] => Div0.IN9
+numero[1] => Add1.IN20
+numero[2] => Div0.IN8
+numero[2] => Add1.IN19
+numero[3] => Div0.IN7
+numero[3] => Add1.IN18
+numero[4] => Div0.IN6
+numero[4] => Add1.IN17
+numero[5] => Div0.IN5
+numero[5] => Add1.IN16
+numero[6] => Div0.IN4
+numero[6] => Add1.IN15
+dezena[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[0] <= numero[0].DB_MAX_OUTPUT_PORT_TYPE
+unidade[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+unidade[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+unidade[3] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|GAME|Data_path:caminho_de_dados|display_7_seg:displa2|Bcd_7seg:dez
+entrada[0] => Mux0.IN19
+entrada[0] => Mux1.IN19
+entrada[0] => Mux2.IN19
+entrada[0] => Mux3.IN19
+entrada[0] => Mux4.IN19
+entrada[0] => Mux5.IN19
+entrada[0] => Mux6.IN19
+entrada[1] => Mux0.IN18
+entrada[1] => Mux1.IN18
+entrada[1] => Mux2.IN18
+entrada[1] => Mux3.IN18
+entrada[1] => Mux4.IN18
+entrada[1] => Mux5.IN18
+entrada[1] => Mux6.IN18
+entrada[2] => Mux0.IN17
+entrada[2] => Mux1.IN17
+entrada[2] => Mux2.IN17
+entrada[2] => Mux3.IN17
+entrada[2] => Mux4.IN17
+entrada[2] => Mux5.IN17
+entrada[2] => Mux6.IN17
+entrada[3] => Mux0.IN16
+entrada[3] => Mux1.IN16
+entrada[3] => Mux2.IN16
+entrada[3] => Mux3.IN16
+entrada[3] => Mux4.IN16
+entrada[3] => Mux5.IN16
+entrada[3] => Mux6.IN16
+saida[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|GAME|Data_path:caminho_de_dados|display_7_seg:displa2|Bcd_7seg:un
+entrada[0] => Mux0.IN19
+entrada[0] => Mux1.IN19
+entrada[0] => Mux2.IN19
+entrada[0] => Mux3.IN19
+entrada[0] => Mux4.IN19
+entrada[0] => Mux5.IN19
+entrada[0] => Mux6.IN19
+entrada[1] => Mux0.IN18
+entrada[1] => Mux1.IN18
+entrada[1] => Mux2.IN18
+entrada[1] => Mux3.IN18
+entrada[1] => Mux4.IN18
+entrada[1] => Mux5.IN18
+entrada[1] => Mux6.IN18
+entrada[2] => Mux0.IN17
+entrada[2] => Mux1.IN17
+entrada[2] => Mux2.IN17
+entrada[2] => Mux3.IN17
+entrada[2] => Mux4.IN17
+entrada[2] => Mux5.IN17
+entrada[2] => Mux6.IN17
+entrada[3] => Mux0.IN16
+entrada[3] => Mux1.IN16
+entrada[3] => Mux2.IN16
+entrada[3] => Mux3.IN16
+entrada[3] => Mux4.IN16
+entrada[3] => Mux5.IN16
+entrada[3] => Mux6.IN16
+saida[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

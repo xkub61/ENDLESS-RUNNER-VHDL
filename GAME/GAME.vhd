@@ -7,12 +7,19 @@ entity GAME is
 			game_start : in std_logic;
 			game_a_button : in std_logic;
 			game_b_button : in std_logic;
+			--lcd
 			lcd_data_pins : out std_logic_vector(7 downto 0);
 			lcd_rs_pin : out std_logic;
 			lcd_e_pin : out std_logic;
 			lcd_on_pin : out std_logic;
 			lcd_blon_pin : out std_logic;
-			lcd_rw_pin : out std_logic
+			lcd_rw_pin : out std_logic;
+			--7 segmentos
+			d7s_1_dez : out std_logic_vector(6 downto 0);
+			d7s_1_un : out std_logic_vector(6 downto 0);
+			d7s_2_dez : out std_logic_vector(6 downto 0);
+			d7s_2_un : out std_logic_vector(6 downto 0)
+			
 			);
 end GAME;
 
@@ -50,40 +57,45 @@ end component;
 
 component Data_path is
 	port(
-		--entradas
-		dt_clr: in std_logic; -- RESET GERAL
-		dt_clk: in std_logic;
-		dt_en_cont_1: in std_logic; -- hablita contador 1
-		dt_en_cont_2: in std_logic; -- hablita contador 2
-		dt_rmv_moeda : in std_logic;
-		dt_rmv_obst : in std_logic;
-		dt_shift : in std_logic;
-		dt_set_player : in std_logic;
-		dt_clr_player : in std_logic;
-		dt_clr_start : in std_logic; --zera o reg do start
-		dt_clr_timer : in std_logic; -- zera o timer
-		dt_cmd : in std_logic_vector(2 downto 0);
-		dt_a_key : in std_logic;--botao a
-		dt_b_key : in std_logic;--botao b
-		dt_start_key : in std_logic;--botao start
-		dt_render : in std_logic;
-		
-		--saidas
-		dt_player : out std_logic;
-		dt_start : out std_logic;
-		dt_end_of_frame : out std_logic; -- '1' quando passa 66 ms
-		dt_tem_moeda : out std_logic;
-		dt_tem_obstaculo : out std_logic;
-		dt_collected : out std_logic;
-		dt_ended : out std_logic;
-		dt_igual : out std_logic;
-		dt_maior: out std_logic;
-		dt_menor : out std_logic;
-		dt_finished : out std_logic;
-		dt_data : out std_logic_vector(7 downto 0);
-		dt_rs : out std_logic;
-		dt_e : out std_logic
-		);
+			--entradas
+			dt_clr: in std_logic; -- RESET GERAL
+			dt_clk: in std_logic;
+			dt_en_cont_1: in std_logic; -- hablita contador 1
+			dt_en_cont_2: in std_logic; -- hablita contador 2
+			dt_rmv_moeda : in std_logic;
+			dt_rmv_obst : in std_logic;
+			dt_shift : in std_logic;
+			dt_set_player : in std_logic;
+			dt_clr_player : in std_logic;
+			dt_clr_start : in std_logic; --zera o reg do start
+			dt_clr_timer : in std_logic; -- zera o timer
+			dt_cmd : in std_logic_vector(2 downto 0);
+			dt_a_key : in std_logic;--botao a
+			dt_b_key : in std_logic;--botao b
+			dt_start_key : in std_logic;--botao start
+			dt_render : in std_logic;
+			
+			--saidas
+			dt_player : out std_logic;
+			dt_start : out std_logic;
+			dt_end_of_frame : out std_logic; -- '1' quando passa 66 ms
+			dt_tem_moeda : out std_logic;
+			dt_tem_obstaculo : out std_logic;
+			dt_collected : out std_logic;
+			dt_ended : out std_logic;
+			dt_igual : out std_logic;
+			dt_maior: out std_logic;
+			dt_menor : out std_logic;
+			dt_finished : out std_logic;
+			dt_data : out std_logic_vector(7 downto 0);
+			dt_rs : out std_logic;
+			dt_e : out std_logic;
+			
+			dt_d1_dez : out std_logic_vector(6 downto 0);
+			dt_d1_un : out std_logic_vector(6 downto 0);
+			dt_d2_dez : out std_logic_vector(6 downto 0);
+			dt_d2_un : out std_logic_vector(6 downto 0)
+			);
 end component;
 
 	signal finished, start, tem_moeda, tem_obst,collected, ended ,player, end_of_frame : std_logic;
@@ -154,7 +166,11 @@ begin
 		dt_finished => finished,
 		dt_data => lcd_data_pins,
 		dt_rs => lcd_rs_pin,
-		dt_e => lcd_e_pin
+		dt_e => lcd_e_pin,
+		dt_d1_dez => d7s_1_dez,
+		dt_d1_un => d7s_1_un,
+		dt_d2_dez => d7s_2_dez,
+		dt_d2_un => d7s_2_un
 		);
 		
 		lcd_on_pin <= '1'; --liga o lcd
